@@ -83,6 +83,18 @@
 \maketitle
 \thispagestyle{fancy}
 
+\vspace{0.6cm}
+\begin{center}
+\begin{minipage}{0.84\linewidth}
+\small\itshape
+``Einstein said that space and time are relative. I say that spacetime itself is
+conditional — it does not exist everywhere. And that resolves the contradiction
+between General Relativity and Quantum Mechanics.''\\[0.35em]
+\upshape\small\hfill — Max Meeuvissen, May 2026
+\end{minipage}
+\end{center}
+\vspace{0.4cm}
+
 \begin{abstract}
 \noindent
 We propose a conceptual framework — the
@@ -973,26 +985,48 @@ a symmetric double-well potential with minima at $\Phi = 0$
 (superstate) and $\Phi = 1$ (complete spacetime). Both phases are
 locally stable in the absence of matter.
 
-\paragraph{Candidate source term.}
+\paragraph{Reformulated source term (revision of 4 May 2026).}
+
+The original candidate $J(T) = \kappa T/(T+T_0)$ was a positive source
+driving $\Phi$ toward 1 in high-energy regions.  On reflection, this is
+causally inconsistent: the stress-energy density $T$ is defined only
+where $\Phi > 0$ — it presupposes the existence of spacetime.  $T$
+cannot therefore be the cause of $\Phi$.  The causal direction must be
+reversed: $T$ is a \emph{consequence} of spacetime, not its driver.
+\textbf{[Candidate — conceptual revision, Eintrag~012.]}
+
+The reformulated source term treats $T$ as a \emph{destructive} factor:
+high mass-energy density drives the system back toward the superstate
+(the singularity phase transition), not toward spacetime formation.
 \begin{equation}
-  J(T) = \frac{\kappa\,T}{T + T_0},
+  J(T) = -\kappa\,\max\!\bigl(0,\,T - T_c\bigr)/T_c,
   \label{eq:source}
 \end{equation}
-where $T_0$ is a characteristic energy density (value
-undetermined) and $\kappa > 0$. For $T \gg T_0$: $J \to \kappa$,
-driving $\Phi$ toward 1 (spacetime forms in high-energy regions).
-For $T = 0$: $J = 0$ (vacuum — no preferred phase from this term).
+where $T_c$ is the critical energy density (singularity threshold) and
+$\kappa > 0$.  Below $T_c$: $J = 0$.
+Above $T_c$: $J < 0$, driving $\Phi \to 0$.
+
+\paragraph{Autonomous expansion front.}
+Since the cosmic expansion front is not driven by matter (matter is a
+product of spacetime, not its cause), the front propagates according to
+the source-free equation:
+\begin{equation}
+  \Box\Phi + V'(\Phi) = 0,
+  \label{eq:autonomous}
+\end{equation}
+the equation of a topological domain wall in the double-well potential
+\eqref{eq:potential}.  The front is topologically stable; its
+propagation velocity is determined by $\lambda$ and the potential shape,
+independent of matter content.  \textbf{[Candidate.]}
 
 \begin{openbox}
-\textbf{Open Problem 8 — What determines $T_0$?}\\
-$T_0$ is the characteristic energy density at which the
-transition from superstate to spacetime is half-complete
-($\Phi = 0.5$). Its value governs the quantum-to-classical
-boundary. Candidate scales include the Planck density
+\textbf{Open Problem 8 — What determines $T_c$?}\\
+$T_c$ is the critical energy density above which spacetime collapses
+into the superstate (the singularity threshold).  Candidate scales
+include the Planck density
 ($\rho_{\rm Pl} \approx 5 \times 10^{96}~\text{kg/m}^3$) and
-cosmological energy scales. The derivation of $T_0$ from
-fundamental constants is the central open problem of the local
-$\Phi$-dynamics.
+other fundamental scales.  The derivation of $T_c$ from fundamental
+constants is the central open problem of the local $\Phi$-dynamics.
 \end{openbox}
 
 % ─────────────────────────────────────────────────────────────
@@ -1069,7 +1103,11 @@ Cosmological boundary condition \eqref{eq:boundary}
   & Established & Transition-zone profile\\
 $\Phi$-dynamics eq.\ \eqref{eq:phi_dynamics} (form of $V$, $J$)
   & Candidate & Derivation from first principles\\
-Value of $T_0$ (characteristic density)
+Reformulated source term $J$ (destructive, Eq.~\ref{eq:source})
+  & Candidate & Consistent with causal direction\\
+Autonomous expansion front Eq.~\eqref{eq:autonomous}
+  & Candidate & Formal derivation from action\\
+Value of $T_c$ (critical density for singularity)
   & Open & Derivation from constants\\
 Quantum limit: Schrödinger eq.\ from $\Phi < 1$
   & Open & Full formal derivation\\
@@ -1134,9 +1172,16 @@ expansion is the propagation of the spacetime wavefront into the
 superstate.  Dark energy might reflect an intrinsic property of the
 spacetime-superstate interface — a boundary tension or surface energy
 term — rather than a constant energy density of spacetime itself.
-A mathematical model of the interface would need to reproduce the
-observed equation of state \(w \approx -1\) and to explain the
-coincidence between the onset of acceleration and the current epoch.
+
+\textbf{Mathematical consequence.}  A boundary tension $\sigma$ (energy per unit
+area) gives a boundary energy density $\rho_B = 3\sigma/R$.  Since
+$\rho_B \propto 1/R$ decreases with expansion, the equation of state is
+$w \approx -1/3$, \emph{not} $w = -1$ as required by observation.  For
+$w = -1$, a constant energy density — proportional to the volume
+$\propto R^3$ — is needed, not a surface term $\propto R^2$.  Simple
+boundary tension therefore does not reproduce the observed dark energy
+equation of state.  This is a concrete mathematical challenge for the
+interface hypothesis.
 \end{openbox}
 
 \begin{openbox}
@@ -1148,6 +1193,20 @@ defined over spacetime; a path integral over all possible geometries
 regime; or an entirely new structure not present in the current
 mathematical physics toolkit.  This is the most fundamental formal
 open problem of the framework.
+\end{openbox}
+
+\begin{openbox}
+\textbf{Open Problem 7 — Can the multi-bubble alternative be conceptually sustained?}\\
+The speculative multi-bubble variant (Section~\ref{sec:cyclic},
+Phase~2) posits that multiple spacetime episodes originate
+independently in the superstate and dock at inter-dimensional
+boundaries.  A prior conceptual problem must be resolved before
+formalization: the superstate, by definition, has no spatial
+structure — so what differentiates regions within it that could
+give rise to separate bubbles?  Any mechanism that differentiates
+superstate regions implicitly introduces a pre-superstate structure,
+which would either require justification or contradict the foundational
+definition.
 \end{openbox}
 
 \begin{openbox}
@@ -1208,10 +1267,34 @@ including potential signatures of inter-bubble boundaries in the
 cosmic microwave background or large-scale structure.
 \end{openbox}
 
+\begin{openbox}
+\textbf{Open Problem 13 — Active, passive, or bidirectional expansion?}\\
+Is the propagation of the spacetime wavefront into the superstate purely
+passive (the substrate expands), actively bidirectional (the superstate
+simultaneously attracts the wavefront), or is this dichotomy
+conceptually ill-posed?  If bidirectional: does the superstate require
+an internal structure (pressure, potential) to exert attraction, and
+would this contradict its definition as structure-free?
+\end{openbox}
+
+\begin{openbox}
+\textbf{Open Problem 14 — Does any boundary mechanism yield $w = -1$?}\\
+Simple boundary tension gives $w \approx -1/3$ (Open Problem~5).  For
+$w = -1$, the energy density must be constant — independent of the
+boundary radius $R$.  This would require the effective dark energy
+contribution to grow proportionally to the enclosed volume $\propto
+R^3$, not the boundary area $\propto R^2$.  What physical mechanism of
+the spacetime-superstate interface, if any, generates a volume-scaling
+rather than area-scaling energy?
+\end{openbox}
+
 \medskip
 \noindent\textit{Open Problems~1--7 were identified during the initial
 conceptual development.  Problems~8--12 emerged from the first
-mathematical formalization session (Section~\ref{sec:math}).}
+mathematical formalization session (Section~\ref{sec:math}).
+Problems~13--14 were identified during the reformulation of the
+$\Phi$-source term and the dark energy analysis (Einträge 012--013,
+4~May~2026).}
 
 % ============================================================
 \section{Discussion}

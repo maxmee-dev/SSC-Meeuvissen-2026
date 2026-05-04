@@ -8,6 +8,9 @@ This repository documents the **Spacetime-Superposition Complementarity (SSC)** 
 
 ## Core Thesis
 
+> *„Einstein sagte, Raum und Zeit sind relativ. Ich sage, Raumzeit selbst ist bedingt — sie existiert nicht überall. Und das löst den Widerspruch zwischen Relativitätstheorie und Quantenmechanik."*
+> — Max Meeuvissen, Mai 2026
+
 Spacetime and quantum superposition are mutually exclusive, complementary states of a single fundamental substrate.
 
 - Where spacetime exists → superposition collapses → things have location, time, mass, distinguishability

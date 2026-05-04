@@ -1,6 +1,9 @@
 # SSC — Mathematische Grundlegung
 ### Max Meeuvissen · Beginn: 4. Mai 2026
 
+> **„Einstein sagte, Raum und Zeit sind relativ. Ich sage, Raumzeit selbst ist bedingt — sie existiert nicht überall. Und das löst den Widerspruch zwischen Relativitätstheorie und Quantenmechanik."**
+> — Max Meeuvissen, Mai 2026
+
 Dieses Dokument protokolliert die schrittweise mathematische Formalisierung der SSC-Theorie.  
 Es entsteht im Dialog: Max beschreibt seine Intuition, Claude übersetzt sie in Mathematik.
 

@@ -231,6 +231,12 @@
   </div>
 </div>
 
+<div style="text-align:center; margin: 1.2cm 2cm 1.5cm 2cm; font-style:italic; font-size:11pt; color:#333; border-top:1px solid #ccc; border-bottom:1px solid #ccc; padding: 14px 0;">
+  „Einstein sagte, Raum und Zeit sind relativ. Ich sage, Raumzeit selbst ist bedingt — sie existiert nicht überall.<br>
+  Und das löst den Widerspruch zwischen Relativitätstheorie und Quantenmechanik."<br>
+  <span style="font-style:normal; font-size:9.5pt; color:#666;">— Max Meeuvissen, Mai 2026</span>
+</div>
+
 
 <!-- ══════════════════════════════════════════════════════ INHALTSVERZEICHNIS -->
 <div class="toc">
@@ -368,6 +374,10 @@
 <p><strong>Warum ist das Universum 93 Mrd. Lichtjahre groß, obwohl es nur 13,8 Mrd. Jahre alt ist?</strong> Licht legt in 13,8 Mrd. Jahren maximal 13,8 Mrd. Lichtjahre zurück. Aber der Raum selbst hat sich in dieser Zeit ausgedehnt. Das Licht, das jetzt bei uns ankommt, wurde vor 13,8 Mrd. Jahren ausgesandt — der Ausgangspunkt hat sich seitdem mit dem expandierenden Raum mitbewegt und ist heute ~46,5 Mrd. Lichtjahre entfernt. Die Expansionsfront kann schneller als Licht rezedieren — das ist erlaubt, weil es Raum ist der sich dehnt, nicht Materie die sich bewegt.</p>
 
 <p><strong>Mögliche Implikation für dunkle Energie</strong> <em>[offen]</em>: Die beschleunigte Expansion könnte eine Eigenschaft der Raumzeit-Superzustand-Grenzfläche selbst sein — eine Grenzflächenspannung — statt einer intrinsischen Energiedichte des Raums.</p>
+
+<p><strong>Mathematische Konsequenz der Grenzflächenspannung</strong> <em>[Eintrag 013]</em>: Sei σ die Grenzflächenspannung (Energie pro Fläche), R der Radius der Raumzeit-Zone. Dann gilt:</p>
+<div class="gleichung">E<sub>Grenzfläche</sub> = σ · 4πR² &nbsp;→&nbsp; ρ<sub>Grenzfläche</sub> = 3σ / R</div>
+<p>Da ρ mit wachsendem R abnimmt (∝ 1/R), folgt die Zustandsgleichung <strong>w ≈ −1/3</strong>. Beobachtet ist jedoch w ≈ −1 (kosmologische Konstante). Für w = −1 müsste ρ konstant bleiben — also die Energie proportional zum Volumen (∝ R³) wachsen, nicht zur Fläche. Einfache Grenzflächenspannung erklärt w = −1 nicht. Diese Diskrepanz ist offen (→ Frage 14).</p>
 
 
 <!-- ══════════════════════════════════════════════════════ 6 URKNALL -->
@@ -560,14 +570,25 @@
 
 <p><em>In Worten:</em> Ein Doppeltopf-Potential mit stabilen Minima bei Φ = 0 (Superzustand) und Φ = 1 (vollständige Raumzeit). Ohne Materie sind beide Zustände lokal stabil.</p>
 
-<p><strong>Kandidat für den Quellterm:</strong></p>
-<div class="gleichung"><span class="nr">(8)</span>J(T) = κ · T / (T + T₀)</div>
+<p><strong>Reformulierter Quellterm</strong> <em>[Eintrag 012 — konzeptuelle Korrektur]</em>:</p>
 
-<p><em>In Worten:</em> Bei hoher Energiedichte (T ≫ T₀) treibt der Quellterm Φ gegen 1 — Raumzeit bildet sich. Bei T = 0 ist J = 0 — kein bevorzugter Zustand. T₀ ist ein charakteristischer Schwellenwert, dessen Herkunft noch offen ist.</p>
+<p>Der ursprüngliche Ansatz J(T) = κ·T/(T+T₀) war ein positiver Quellterm — hohe Energiedichte T treibt Φ gegen 1. Das ist kausal inkonsistent: T (Energie-Dichte) existiert nur wo Φ > 0 gilt, also wo Raumzeit schon vorhanden ist. T kann nicht die <em>Ursache</em> von Φ sein.</p>
+
+<p>Die kausale Richtung muss umgekehrt werden: T ist eine Konsequenz von Φ, nicht sein Auslöser. Der Quellterm beschreibt daher, wann T groß genug wird um Φ zu <em>zerstören</em> (Phasenübergang an Singularitäten):</p>
+
+<div class="gleichung"><span class="nr">(8)</span>J(T) = −κ · max(0, T − T<sub>c</sub>) / T<sub>c</sub></div>
+
+<p><em>In Worten:</em> Unterhalb der kritischen Dichte T<sub>c</sub>: J = 0, kein Einfluss auf Φ. Oberhalb (Singularitätsschwelle): J &lt; 0, treibt Φ gegen 0. T ist ein destruktiver Faktor, kein konstruktiver. <span class="status-candidate">■ Candidate</span></p>
+
+<p><strong>Konsequenz — Autonome Expansionsfront:</strong> Da die Raumzeit-Wellenfront nicht durch Materie angetrieben wird (Materie ist Konsequenz von Raumzeit, nicht ihre Ursache), gilt für die Expansionsfront die quellenfreie Gleichung:</p>
+
+<div class="gleichung"><span class="nr">(8b)</span>□Φ + V′(Φ) = 0</div>
+
+<p><em>In Worten:</em> Die Wellenfront propagiert autonom durch das Doppeltopf-Potential als topologisch stabile Domänenwand. Ihre Ausbreitungsgeschwindigkeit ergibt sich aus dem Potential — unabhängig vom materiellen Inhalt. <span class="status-candidate">■ Candidate</span></p>
 
 <div class="offenbox">
-  <strong>Offenes Problem: Was bestimmt T₀?</strong>
-  T₀ ist die charakteristische Energiedichte, bei der Φ = 0,5 gilt. Kandidaten: die Planck-Dichte (~5 × 10⁹⁶ kg/m³) oder eine kosmologische Skala. Die Herleitung von T₀ aus Grundkonstanten ist das zentrale offene Problem der lokalen Φ-Dynamik.
+  <strong>Offenes Problem: Was bestimmt T<sub>c</sub>?</strong>
+  T<sub>c</sub> ist die kritische Energiedichte, ab der Raumzeit kollabiert (Singularitätsschwelle). Kandidaten: die Planck-Dichte (~5 × 10⁹⁶ kg/m³) oder eine andere fundamentale Skala. Die Herleitung von T<sub>c</sub> aus Grundkonstanten ist das zentrale offene Problem der lokalen Φ-Dynamik.
 </div>
 
 <p><strong>Kosmologische Randbedingung:</strong> <span class="status-established">■ Established</span></p>
@@ -738,7 +759,7 @@ Mögliche Grenzflächenspannung der Φ-Front — noch nicht ausgearbeitet. Müss
 <div class="offenbox"><strong>6 — Welche mathematische Struktur beschreibt den Superzustand?</strong>
 Φ = 0 bedeutet, dass keine Raumzeit existiert — Φ kann dort nicht als Feld auf der Raumzeit definiert sein. Zirkuläres Problem, das eine neue mathematische Sprache erfordert.</div>
 
-<div class="offenbox"><strong>7 — Was bestimmt T₀ (den Φ-Schwellenwert)?</strong>
+<div class="offenbox"><strong>7 — Was bestimmt T<sub>c</sub> (die Singularitätsschwelle)?</strong>
 Planck-Dichte, kosmologische Skala, oder etwas anderes? Zentrale offene Frage der lokalen Φ-Dynamik.</div>
 
 <div class="offenbox"><strong>8 — Kann die Schrödingergleichung formal aus Φ &lt; 1 abgeleitet werden?</strong>
@@ -752,6 +773,15 @@ Wirkt der Superzustand durch die Grenzfläche in die Raumzeit hinein, oder trans
 
 <div class="offenbox"><strong>11 — Kann aus der Φ-Dynamik sowohl GR als auch QM formal abgeleitet werden?</strong>
 Das wäre die formale Vereinigung beider Theorien — das tiefste mathematische Ziel des Programms.</div>
+
+<div class="offenbox"><strong>12 — Ist die Expansion passiv, aktiv oder bidirektional?</strong>
+Breitet sich Raumzeit nur passiv aus (Substrat expandiert), oder zieht der Superzustand die Raumzeit gleichzeitig an? Falls bidirektional — lässt sich daraus beschleunigte Expansion ableiten?</div>
+
+<div class="offenbox"><strong>13 — Liefert ein bidirektionaler Mechanismus quantitativ w ≈ −1?</strong>
+Einfache Grenzflächenspannung ergibt w ≈ −1/3 (nicht −1). Für w = −1 müsste die Energie proportional zum Volumen wachsen, nicht zur Fläche. Diese Diskrepanz ist noch nicht aufgelöst.</div>
+
+<div class="offenbox"><strong>14 — Energieerhaltung an der Grenzfläche?</strong>
+Wie verhält sich der Energieaustausch an der Raumzeit-Superzustand-Grenzfläche mit globaler Energieerhaltung — und welche Energie wird bei jedem Expansionsschritt aus dem Superzustand gewonnen?</div>
 
 
 <hr>

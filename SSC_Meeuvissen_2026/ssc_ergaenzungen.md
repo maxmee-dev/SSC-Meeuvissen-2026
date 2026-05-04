@@ -3,6 +3,11 @@
 
 ---
 
+> **„Einstein sagte, Raum und Zeit sind relativ. Ich sage, Raumzeit selbst ist bedingt — sie existiert nicht überall. Und das löst den Widerspruch zwischen Relativitätstheorie und Quantenmechanik."**
+> — Max Meeuvissen, Mai 2026
+
+---
+
 > *Dieses Dokument ist zweierlei gleichzeitig: der aktuelle Stand der Theorie — und das Protokoll ihres Entstehens. Wer es von vorne nach hinten liest, sieht nicht nur was die Theorie ist, sondern wie und warum sie so geworden ist.*
 
 ---
