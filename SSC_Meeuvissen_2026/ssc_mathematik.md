@@ -111,3 +111,68 @@ $$\Phi(\rho) = \frac{\rho}{\rho + \rho_0}$$
 Was bestimmt ρ₀? Ist es die Planck-Dichte, eine kosmologische Größe, oder etwas anderes? Und wie beschreiben wir die Dynamik — also wie verändert sich Φ über Zeit und Raum?
 
 ---
+
+## Sitzung 2 — 4. Mai 2026
+
+### Frage 2 an Max:
+
+**Claude:** Zur Gleichung Φ(ρ) = ρ/(ρ + ρ₀): Bei ρ → ∞ geht Φ → 1, nicht → 0. Aber in der Tabelle aus Sitzung 1 steht: Schwarzes Loch (Singularität) → ρ → ∞ → Φ → 0. Das ist ein Widerspruch. Stimmt es, dass Raumzeit bei beiden Extremen (fast kein Inhalt UND extreme Dichte) verschwindet — und in der Mitte maximal stabil ist?
+
+**Max:** Die "unendliche" Dichte im Zentrum eines Schwarzen Lochs und der Superzustand sind ähnlich — beide haben weder Raum noch Zeit. Aber: Kann etwas in Superposition überhaupt eine Dichte haben? Wenn ein Teilchen gleichzeitig überall ist, hat es keinen Abstand zu sich selbst — macht Dichte da noch Sinn?
+
+**Auswertung — wichtige Erkenntnis:**
+
+Max hat ein konzeptuelles Problem mit dem Ansatz Φ(ρ) identifiziert:
+
+**Dichte setzt Raumzeit voraus.** Dichte = Masse pro Volumen. Volumen setzt Raum voraus. Raum setzt Raumzeit voraus. Raumzeit wird durch Φ > 0 beschrieben. Also:
+
+> ρ ist nur definiert, wo Φ > 0 gilt. Im Superzustand (Φ = 0) ist ρ nicht null und nicht unendlich — **ρ ist dort kategorial undefiniert.**
+
+Das ergibt ein Henne-Ei-Problem: Φ soll von ρ abhängen, aber ρ existiert nur, wo Φ schon existiert.
+
+**Zur Quantensuperposition:** Die Quantenmechanik unterscheidet Wahrscheinlichkeitsdichte (|ψ(x)|² — wo ist das Teilchen wahrscheinlich?) von Massedichte (wie viel Masse pro Volumen?). Ein Teilchen in Superposition hat keine definierte Massedichte — nicht weil sie unendlich ist, sondern weil kein definierter Ort existiert.
+
+---
+
+### Frage 3 an Max:
+
+**Claude:** Wenn ρ erst durch Raumzeit existiert und Raumzeit durch Φ beschrieben wird — was sollte dann der fundamentale Auslöser sein, der Φ von 0 auf 1 bringt?
+
+**Max:** Das ist eigentlich klar: Die Expansionsfront selbst ist der Mechanismus. Die Größe des Universums lässt sich jederzeit berechnen — Alter × Ausbreitungsgeschwindigkeit. Alles innerhalb der Front ist Raumzeit (Φ = 1), alles außerhalb ist Superzustand (Φ = 0). Es ändert sich nichts an der bekannten Physik.
+
+*(Nebenfrage von Max: Warum ist das Universum ~93 Milliarden Lichtjahre im Durchmesser, obwohl es nur 13,8 Milliarden Jahre alt ist?)*
+
+**Antwort auf die Nebenfrage:**
+
+Das Universum ist 13,8 Milliarden Jahre alt, Licht legt in dieser Zeit maximal 13,8 Milliarden Lichtjahre zurück. Aber der **Raum selbst hat sich in dieser Zeit ausgedehnt**. Licht, das vor 13,8 Milliarden Jahren ausgesandt wurde, kommt jetzt bei uns an — aber der Ausgangspunkt dieses Lichts hat sich seitdem mit dem expandierenden Raum mitbewegt und ist heute ~46,5 Milliarden Lichtjahre entfernt. Die Expansionsfront selbst kann sich in manchen Regionen schneller als Licht rezedieren — das ist erlaubt, weil es Raum ist, der sich dehnt, nicht Materie, die sich durch Raum bewegt.
+
+**Auswertung — Zwei-Ebenen-Struktur von Φ:**
+
+Max' Antwort löst das Henne-Ei-Problem für die kosmologische Ebene: Der Auslöser ist nicht ρ, sondern die Expansionsdynamik selbst. Das ergibt eine natürliche Trennung:
+
+| Ebene | Was bestimmt Φ | Mathematische Beschreibung |
+|-------|---------------|---------------------------|
+| **Kosmologisch** | Position relativ zur Expansionsfront | Φ = 1 innerhalb des Radius R(t), Φ = 0 außerhalb |
+| **Lokal** | Lokale Physik innerhalb der Raumzeit | Abweichungen von Φ = 1 auf Quantenebene und an Singularitäten |
+
+Der Radius der Raumzeit-Zone zum Zeitpunkt t:
+
+$$R(t) = \int_0^t c \cdot a(t') \, dt'$$
+
+*In Worten: R(t) ist der Abstand, den Licht seit dem Urknall zurückgelegt hat, korrigiert um die Ausdehnung des Raums selbst. Das ist der Kosmologische Partikelhorizont — eine bekannte Größe der Standardkosmologie. Für t = 13,8 Mrd. Jahre ergibt sich R ≈ 46,5 Mrd. Lichtjahre.*
+
+Die kosmologische Φ-Grenze:
+
+$$\Phi_{\text{kosm}}(\mathbf{x}, t) = \begin{cases} 1 & \text{wenn } |\mathbf{x}| \leq R(t) \\ 0 & \text{wenn } |\mathbf{x}| > R(t) \end{cases}$$
+
+*In Worten: Innerhalb des Partikelhorizonts ist Φ = 1 (Raumzeit). Außerhalb ist Φ = 0 (Superzustand). Das ist keine zusätzliche Annahme — R(t) ist direkt aus der Standardkosmologie berechenbar.*
+
+**⚠ Offene Frage:** Dieser kosmologische Anteil beschreibt den globalen Hintergrund. Er erklärt noch nicht die lokalen Abweichungen — warum ist Φ auf Quantenebene < 1, und warum geht Φ an Singularitäten wieder → 0? Das ist das Thema für die nächste Ebene.
+
+---
+
+### Nächste offene Frage für Sitzung 3:
+
+Die erste Gleichung Φ(ρ) = ρ/(ρ + ρ₀) beschreibt die lokalen Abweichungen — aber wir haben gesehen, dass ρ nicht der fundamentale Auslöser sein kann. Wie schreiben wir die lokale Gleichung um? Was ist die richtige Variable, die lokale Schwankungen von Φ innerhalb der Raumzeit beschreibt?
+
+---
