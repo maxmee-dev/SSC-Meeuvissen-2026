@@ -176,3 +176,39 @@ $$\Phi_{\text{kosm}}(\mathbf{x}, t) = \begin{cases} 1 & \text{wenn } |\mathbf{x}
 Die erste Gleichung Φ(ρ) = ρ/(ρ + ρ₀) beschreibt die lokalen Abweichungen — aber wir haben gesehen, dass ρ nicht der fundamentale Auslöser sein kann. Wie schreiben wir die lokale Gleichung um? Was ist die richtige Variable, die lokale Schwankungen von Φ innerhalb der Raumzeit beschreibt?
 
 ---
+
+## Zwischenklärung — 4. Mai 2026 (parallel zur Sitzung 2)
+
+*In einer separaten Sitzung wurden zwei wichtige Präzisierungen erarbeitet, die direkt die mathematische Struktur von Φ betreffen.*
+
+### Φ hat zwei Dimensionen
+
+Φ beschreibt nicht eine einzige Eigenschaft, sondern zwei verschiedene Aspekte, die mathematisch getrennt behandelt werden müssen:
+
+**Dimension 1 — Existenz von Raumzeit** (Φ = 0 vs. Φ > 0):
+
+$$\Phi = 0 \Rightarrow \text{keine definierten Teilchen, keine Masse, keine Ladung, keine Identität}$$
+
+$$\Phi > 0 \Rightarrow \text{Teilchen existieren als definierte Objekte}$$
+
+**Dimension 2 — Vollständigkeit von Raumzeit** (Φ zwischen 0 und 1):
+
+$$\Phi = 1 \Rightarrow \text{Positionen klassisch bestimmt}$$
+
+$$0 < \Phi < 1 \Rightarrow \text{Teilchen definiert, aber Positionen unbestimmt (Superposition)}$$
+
+### Mathematische Konsequenz
+
+Das bedeutet: Φ hat nicht eine glatte Kurve von 0 bis 1 mit gleichmäßiger Bedeutung. Es gibt einen qualitativen Sprung bei Φ = 0:
+
+| Φ-Bereich | Physikalischer Inhalt | Quantenmechanisches Pendant |
+|-----------|----------------------|----------------------------|
+| Φ = 0 | Superzustand — keine Teilchenidentität | — (kategorial anders) |
+| 0 < Φ < 1 | Quantensuperposition — Teilchen existieren, Ort unbestimmt | Wellenfunktion ψ |
+| Φ = 1 | Klassische Physik — Ort bestimmt | Klassischer Grenzfall |
+
+**⚠ Konsequenz für die Mathematik:** Die Gleichung Φ(ρ) = ρ/(ρ + ρ₀) beschreibt nur die lokalen Schwankungen innerhalb des Bereichs 0 < Φ ≤ 1 — also die Vollständigkeit der Raumzeit. Die Grenze Φ = 0 (Übergang in den Superzustand) ist eine kategoriale Grenze, keine glatte Fortsetzung derselben Kurve.
+
+**Ziel der formalen Vereinigung:** Eine vollständige mathematische Beschreibung von Φ über das gesamte Spektrum wäre formal äquivalent zur Vereinigung von Allgemeiner Relativitätstheorie (Grenzfall Φ = 1) und Quantenmechanik (Grenzfall 0 < Φ < 1). Das ist das zentrale mathematische Ziel dieser Formalisierung.
+
+---
