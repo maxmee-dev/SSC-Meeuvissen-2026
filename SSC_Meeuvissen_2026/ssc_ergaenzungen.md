@@ -149,6 +149,23 @@ Vollständige Einzelausarbeitungen in Abschnitt 3.12.
 
 ---
 
+---
+
+### Eintrag 007 — 4. Mai 2026
+**Vertiefung: Warum wird die Position eines Teilchens durch Messung fix?**
+
+Frage von Max: Wenn Raumzeit der Kollaps-Mechanismus ist — warum fixiert dann ausgerechnet die *Messung* die Position?
+
+SSC-Antwort: Die Messung ist nicht der eigentliche Auslöser — **vollständig ausgebildete Raumzeit ist es**. Ein Messgerät ist ein makroskopisches, massives Objekt. Je massereicher ein Objekt, desto vollständiger ist Raumzeit in seiner Umgebung. Wenn ein Teilchen mit einem Messgerät in Wechselwirkung tritt, tritt es erstmals in Kontakt mit vollständig ausgebildeter Raumzeit — und in diesem Moment greift der Kollaps-Mechanismus vollständig.
+
+Konsequenz: Die Messung ist nicht besonders. Jede Wechselwirkung mit vollständig ausgebildeter Raumzeit ist eine Messung. Decoherence — der kontinuierliche Kollaps durch Umgebungseinflüsse — ist strukturell dasselbe wie eine formale Messung. Der Beobachter ist nicht privilegiert.
+
+Warum ein spezifischer Ort herauskommt: Hängt von der lokalen Raumzeit-Konfiguration im Moment der Wechselwirkung ab. Von innen (aus der Perspektive eines Beobachters in der Raumzeit) nicht vorhersagbar — erscheint zufällig. Der quantenmechanische „Zufall" ist damit kein fundamentales Naturgesetz, sondern eine Konsequenz der Perspektive innerhalb von Raumzeit.
+
+Ergänzt in Abschnitt 3.9.
+
+---
+
 *Hier kommen künftige Einträge.*
 
 ---
@@ -286,6 +303,20 @@ Das ergibt ein Spektrum:
 
 **Strukturelle Erklärung für Decoherence:**  
 Je größer und massereicher ein Objekt, desto vollständiger greift Raumzeit — und desto stärker wird Superposition unterdrückt. Die Wissenschaft kann aktuell nicht ausschließen, dass Raumzeit auf Quantenebene unvollständig ist — es ist im Gegenteil ein aktives offenes Problem der Quantengravitation.
+
+#### Warum wird die Position durch Messung fix? *(Eintrag 007)*
+
+Das Teilchen befindet sich auf Quantenebene in einem Bereich unvollständig ausgebildeter Raumzeit — deshalb bleibt seine Superposition erhalten. Es hat keinen fixen Ort, weil der Kollaps-Mechanismus dort noch nicht vollständig greift.
+
+**Dann kommt das Messgerät.** Ein Messgerät ist ein makroskopisches, massives Objekt — Raumzeit ist in seiner Umgebung vollständig ausgebildet. Wenn das Teilchen mit ihm in Wechselwirkung tritt, tritt es erstmals in Kontakt mit vollständig ausgebildeter Raumzeit. In diesem Moment greift der Kollaps-Mechanismus vollständig. Superposition kann dort nicht bestehen. Das Teilchen nimmt einen konkreten Ort an.
+
+Die Messung ist nicht der Auslöser im mystischen Sinne. **Die Messung ist der Moment, in dem das Teilchen erstmals mit vollständiger Raumzeit in Berührung kommt.**
+
+**Warum ein spezifischer Ort?**  
+Welcher konkrete Ort herauskommt, hängt von der lokalen Raumzeit-Konfiguration genau in diesem Moment ab. Von innen — aus der Perspektive eines Beobachters innerhalb der Raumzeit — ist das nicht vorhersagbar. Es erscheint zufällig. Der quantenmechanische „Zufall" ist damit kein fundamentales Naturgesetz, sondern eine Konsequenz der Perspektive innerhalb von Raumzeit.
+
+**Die elegante Umkehrung:**  
+In der Standardphysik ist die Messung ein Mysterium, das extra erklärt werden muss. In SSC ist die Messung nicht besonders. Jede Wechselwirkung mit vollständig ausgebildeter Raumzeit ist eine Messung — ob durch ein Messgerät, ein Staubkorn oder ein Luftmolekül. Decoherence und formale Messung sind strukturell dasselbe. Der Beobachter ist nicht privilegiert.
 
 ---
 
