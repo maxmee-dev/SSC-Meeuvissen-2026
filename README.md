@@ -21,14 +21,16 @@ Spacetime is not the stage on which physics occurs. **Spacetime is the mechanism
 
 | File | Description |
 |------|-------------|
-| `ssc_paper.tex` + `ssc_references.bib` | Formal scientific preprint (LaTeX) |
-| `ssc_erklaerung_de.html` | Full German explanation |
-| `ssc_simple.html` | Short German overview (2–3 pages) |
-| `pdf_desktop.pdf` | PDF for screen reading |
-| `pdf_mobile.pdf` | PDF for mobile |
-| `pdf_druck.pdf` | Print-optimized PDF (black & white) |
-| `pdf_simple.pdf` | Compact overview PDF |
-| `ssc_ergaenzungen.md` | Living theory document with full development log |
+| `ssc_gesamt.html` + `pdf_gesamt.pdf` | Complete German theory document — all content, full mathematics |
+| `ssc_paper.tex` + `ssc_references.bib` | Formal scientific preprint (LaTeX, for Overleaf) |
+| `ssc_ergaenzungen.md` | Living theory document — full development log, Einträge 001–011 |
+| `ssc_mathematik.md` | Mathematical formalization dialogue — equations and their derivation status |
+
+---
+
+## Archive
+
+Older document versions are preserved in `archiv/` — superseded by `ssc_gesamt.html` but retained for historical record.
 
 ---
 
