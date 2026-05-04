@@ -225,6 +225,89 @@ Was noch fehlt: der mathematische Nachweis, dass aus der Φ-Dynamik sowohl die E
 
 ---
 
+### Eintrag 012 — 4. Mai 2026
+**Präzisierte Definition des Superzustands: Φ misst Raumzeit-Präsenz, nicht Inhalt**
+
+**Neue Formulierung:**
+Der Superzustand ist nicht durch seinen Inhalt definiert — sondern ausschließlich durch die Abwesenheit von Raumzeit. Was energetisch darin enthalten ist (Teilchen, Felder, unbekannte Strukturen) ist irrelevant. Der einzige definierte Unterschied zwischen Superzustand und Raumzeit ist das Vorhandensein von Raumzeit selbst.
+
+**Konsequenz:** Φ misst nicht den Inhalt — Φ misst ausschließlich das Vorhandensein von Raumzeit.
+
+**Mathematische Konsequenz:**
+
+Diese Präzisierung hat eine direkte Auswirkung auf die Φ-Dynamikgleichung aus Sitzung 2 der Mathematik:
+
+> □Φ + V′(Φ) = J(T)
+
+Bisher wurde J(T) als positiver Quellterm interpretiert: hohe Energiedichte T treibt Φ auf 1 zu — Masse "erzeugt" Raumzeit. Das ist inkonsistent mit der neuen Definition: wenn Φ nur Raumzeit-Präsenz misst, kann T nicht die Ursache von Φ sein, denn T selbst existiert nur wo Φ > 0 gilt.
+
+Die kausale Richtung muss umgekehrt werden:
+- Φ entsteht nicht durch T — Φ ist primär
+- T existiert als Konsequenz von Φ > 0, nicht als Ursache
+
+**Reformulierter Quellterm:**
+
+J(T) sollte kein positiver Treiber sein, sondern ein destruktiver Term — er beschreibt wann T groß genug ist um Φ zu zerstören (Phasenübergang an Singularitäten):
+
+```
+J(T) = −κ · max(0, T − T_c) / T_c
+```
+
+Unterhalb von T_c (kritische Energiedichte): J = 0, keine Wirkung auf Φ.
+Oberhalb von T_c (Singularitätsschwelle): J < 0, treibt Φ gegen 0.
+
+**Konsequenz für die Expansionsdynamik:**
+Die Expansionsfront (Φ: 0 → 1) wird nicht durch T angetrieben — sie ist eine autonome Phasenfront des Substrats selbst. Die Gleichung für die Expansionsfront vereinfacht sich zu:
+
+```
+□Φ + V′(Φ) = 0
+```
+
+Die Wellenfront propagiert durch das Doppeltopf-Potential V(Φ) = λΦ²(1−Φ)² als topologisch stabile Domänenwand. Ihre Ausbreitungsgeschwindigkeit ergibt sich aus dem Potential und ist unabhängig vom materiellen Inhalt.
+
+**Status:** Candidate — diese Reformulierung ist konsistenter mit der Kernthese, muss aber formal durchgeleitet werden. Der Wert von T_c und κ bleibt offen.
+
+Ergänzt in Abschnitt 3.1 und ssc_mathematik.md (Sitzung 3).
+
+---
+
+### Eintrag 013 — 4. Mai 2026
+**Spekulativer Ansatz: Bidirektionaler Expansionsmechanismus als Kandidat für dunkle Energie**
+
+**Idee:**
+Die Expansion könnte nicht einseitig sein. Raumzeit breitet sich aktiv in den Superzustand aus — und der Superzustand zieht Raumzeit gleichzeitig aktiv an. Beide wirken in dieselbe Richtung und verstärken sich. Je mehr Raumzeit existiert, desto größer die Grenzfläche, desto stärker der kombinierte Effekt.
+
+**Status: Spekulativer Denkansatz — nicht Kerntheorie. Bewusst offen gelassen.**
+
+**Mathematische Analyse — was daraus folgt und was nicht:**
+
+Sei R(t) der Radius der Raumzeit-Zone. Die kombinierte Ausbreitungsrate:
+
+```
+dR/dt = v₀ + α · f(R)
+```
+
+wobei v₀ die intrinsische Expansionsgeschwindigkeit und α · f(R) die Anziehungskraft des Superzustands darstellt.
+
+**Kandidat für f(R):** Wenn die Anziehung proportional zur Grenzfläche ist, gilt f(R) = R². Dann wächst die Raumzeit-Zone beschleunigt — was qualitativ der beobachteten Expansion entspricht.
+
+**Problem 1 — konzeptuelle Spannung:**
+Der Superzustand hat per Definition keine Raumzeit-Struktur. Um Raumzeit "anzuziehen", bräuchte er eine Art Potential oder Druck. Druck und Potential sind aber Raumzeit-Konzepte. Es ist unklar, wie der Superzustand ohne eigene Raumzeit-Struktur eine gerichtete Kraft ausüben kann. Diese Spannung ist noch nicht aufgelöst.
+
+**Problem 2 — Gleichung der Zustandsgröße w:**
+Dunkle Energie ist beobachtet als w ≈ −1. Für eine einfache Grenzflächenspannung σ (Energie pro Fläche) gilt:
+```
+ρ_Grenzfläche = 3σ / R    →    w ≈ −1/3
+```
+Das ist *nicht* w = −1. Für w = −1 müsste die Energiedichte der Grenzfläche konstant bleiben (unabhängig von R) — was eine Energie proportional zu V ∝ R³ erfordert, nicht zur Fläche R². Einfache Grenzflächenspannung liefert w = −1/3, nicht −1.
+
+**Was könnte w = −1 erklären:**
+Wenn der bidirektionale Mechanismus eine effektive Vakuumenergie erzeugt — also eine konstante Energiedichte im gesamten Raumzeit-Volumen — dann folgt w = −1 (das ist formal äquivalent zur kosmologischen Konstante Λ). Das müsste dann hergeleitet werden: warum erzeugt der Mechanismus eine konstante Dichte statt eine flächenproportionale?
+
+**Offene Fragen aus diesem Ansatz:** → Fragen 15, 16, 17 (siehe 3.11)
+
+---
+
 *Hier kommen künftige Einträge.*
 
 ---
@@ -269,6 +352,23 @@ Nicht der Beobachter, nicht das Messgerät — die bloße Existenz von Raumzeit 
 
 **Mögliche Implikation für dunkle Energie** `[?]`  
 Die beschleunigte Expansion könnte eine Eigenschaft der Raumzeit-Superzustand-Grenzfläche selbst sein — eine Grenzflächenspannung — statt einer intrinsischen Energiedichte des Raums.
+
+**Mathematische Konsequenz — Grenzflächenspannung und Zustandsgleichung** *(Eintrag 013)*
+
+Sei σ die Grenzflächenspannung (Energie pro Fläche), R der Radius der Raumzeit-Zone. Dann gilt:
+
+```
+E_Grenzfläche = σ · 4πR²
+ρ_Grenzfläche = E / V = 3σ / R
+```
+
+Da ρ mit wachsendem R abnimmt (proportional 1/R), ergibt sich die kosmologische Zustandsgleichung:
+
+```
+w = p/ρ ≈ −1/3
+```
+
+**Problem:** Beobachtet ist w ≈ −1 (entspricht der kosmologischen Konstante Λ). Für w = −1 müsste ρ konstant bleiben — also die Energie proportional zum Volumen (∝ R³) wachsen, nicht zur Fläche (∝ R²). Einfache Grenzflächenspannung erzeugt w = −1/3, nicht −1. Die Diskrepanz ist noch nicht aufgelöst (→ Frage 14).
 
 ---
 
@@ -384,7 +484,7 @@ Sobald Raumzeit einen Bereich erfasst, transformiert sich Superzustand zwingend 
 
 Quantensuperposition ist kein Laborphänomen. Alles was existiert besteht aus Atomen — und in jedem Atom existiert Superposition auf Ebene der Elektronen und Quarks. Der Überrest des Superzustands ist nicht eine Ausnahme in der Natur. **Er ist die Grundstruktur der gesamten Materie.**
 
-Raumzeit hat den Superzustand nicht vollständig verdrängt. Sie hat ihn auf Quantenebene in Superposition transformiert. Auf Makroebene verdrängt Raumzeit den Superzustand vollständig — deshalb klassische Physik im Alltag. Warum die Grenze genau dort liegt, ist eine offene Frage (→ Frage 12).
+Raumzeit hat den Superzustand nicht vollständig verdrängt. Sie hat ihn auf Quantenebene in Superposition transformiert. Auf Makroebene verdrängt Raumzeit den Superzustand vollständig — deshalb klassische Physik im Alltag. Warum die Grenze genau dort liegt, ist eine offene Frage (→ Frage 10).
 
 Das ergibt ein Spektrum:
 
@@ -449,13 +549,21 @@ Die Erklärungskraft dieser Theorie ist ihr stärkstes Argument für Plausibilit
 5. **Wie verhält sich dunkle Energie in diesem Rahmen?** — Mögliche Grenzflächeneigenschaft. Noch spekulativ.
 6. **Welche mathematische Struktur beschreibt den Superzustand?** — Fundamentalste offene Frage der Theorie.
 7. **Ist der interdimensionale Ansatz (Blasen-Multiversum) formalisierbar?** — Konzeptuell kohärent, mathematisch noch nicht greifbar.
-8. **Was ist dunkle Energie in diesem Rahmen konkret?** — Mögliche Grenzflächeneigenschaft, noch spekulativ.
-9. **Welche mathematische Struktur beschreibt den Superzustand?** — Fundamentalste formale Frage der Theorie.
-10. **Ist Raumzeit auf Quantenebene messbar unvollständig oder körnig?** *(Eintrag 004)*
-11. **Gibt es einen kontinuierlichen Übergang zwischen Quantensuperposition und vollständigem Superzustand — und wenn ja, wo liegt die Grenze?** *(Eintrag 004)*
-12. **Warum verdrängt Raumzeit den Superzustand auf Makroebene vollständig, hinterlässt aber auf Quantenebene einen Überrest als Superposition — und was bestimmt, wo diese Grenze liegt?** *(Eintrag 009)*
-13. **Ist Modell A oder Modell B korrekt — wirkt der Superzustand durch die Grenzfläche in die Raumzeit hinein, oder transformiert er sich ausschließlich bei Kontakt?** *(Eintrag 010)*
-14. **Kann aus der Φ-Dynamik sowohl die Einsteinsche Feldgleichung als auch die Schrödingergleichung als formaler Grenzfall abgeleitet werden?** *(Eintrag 011)*
+
+~~8. **Was ist dunkle Energie in diesem Rahmen konkret?** — Mögliche Grenzflächeneigenschaft, noch spekulativ.~~  
+*Duplikat von Frage 5 — entfernt (4. Mai 2026).*
+
+~~9. **Welche mathematische Struktur beschreibt den Superzustand?** — Fundamentalste formale Frage der Theorie.~~  
+*Duplikat von Frage 6 — entfernt (4. Mai 2026).*
+
+8. **Ist Raumzeit auf Quantenebene messbar unvollständig oder körnig?** *(Eintrag 004)*
+9. **Gibt es einen kontinuierlichen Übergang zwischen Quantensuperposition und vollständigem Superzustand — und wenn ja, wo liegt die Grenze?** *(Eintrag 004)*
+10. **Warum verdrängt Raumzeit den Superzustand auf Makroebene vollständig, hinterlässt aber auf Quantenebene einen Überrest als Superposition — und was bestimmt, wo diese Grenze liegt?** *(Eintrag 009)*
+11. **Ist Modell A oder Modell B korrekt — wirkt der Superzustand durch die Grenzfläche in die Raumzeit hinein, oder transformiert er sich ausschließlich bei Kontakt?** *(Eintrag 010)*
+12. **Kann aus der Φ-Dynamik sowohl die Einsteinsche Feldgleichung als auch die Schrödingergleichung als formaler Grenzfall abgeleitet werden?** *(Eintrag 011)*
+13. **Ist die Expansion der Raumzeit rein passiv (Substrat breitet sich aus), aktiv-bidirektional (Superzustand zieht gleichzeitig an) — oder ist das eine falsche Dichotomie?** *(Eintrag 013)*
+14. **Liefert ein bidirektionaler Expansionsmechanismus quantitativ w ≈ −1, oder bleibt die Diskrepanz zu w ≈ −1/3 (einfache Grenzflächenspannung) bestehen?** *(Eintrag 013)*
+15. **Wie verhält sich Energieaustausch an der Raumzeit-Superzustand-Grenzfläche mit globaler Energieerhaltung — und welche Energie wird bei jedem Expansionsschritt aus dem Superzustand gewonnen?** *(Eintrag 013)*
 
 ---
 
@@ -553,8 +661,8 @@ Diese 9 Probleme wurden nicht nachträglich gesucht. Sie ergaben sich beim Durch
 
 Beide Theorien widersprechen sich nicht fundamental — sie beschreiben verschiedene Regime desselben Spektrums. Eine vollständige mathematische Beschreibung von Φ über das gesamte Spektrum von 0 bis 1 wäre ihre formale Vereinigung.
 
-*Was noch fehlt (offene Frage 14):* Der mathematische Nachweis, dass aus der Φ-Dynamik sowohl die Einsteinschen Feldgleichungen (für Φ → 1) als auch die Schrödingergleichung (für Φ < 1) als Grenzfälle ableitbar sind.
+*Was noch fehlt (offene Frage 12):* Der mathematische Nachweis, dass aus der Φ-Dynamik sowohl die Einsteinschen Feldgleichungen (für Φ → 1) als auch die Schrödingergleichung (für Φ < 1) als Grenzfälle ableitbar sind.
 
 ---
 
-*Letzte Aktualisierung: 4. Mai 2026 — Eintrag 011*
+*Letzte Aktualisierung: 4. Mai 2026 — Eintrag 013*
