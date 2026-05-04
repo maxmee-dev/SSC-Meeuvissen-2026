@@ -1,0 +1,34 @@
+Spacetime-Superposition Complementarity (SSC)
+Autor: Max Meeuvissen
+Datum: 4. Mai 2026
+========================================
+
+INHALT DIESES ORDNERS
+---------------------
+ssc_paper.tex        — Das wissenschaftliche Paper (LaTeX-Quellcode)
+ssc_references.bib   — Die Literaturangaben
+ssc_paper.pdf        — Das fertige PDF (nach Kompilierung, siehe unten)
+LIES_MICH.txt        — Diese Datei
+
+
+FÜR WISSENSCHAFTLER
+--------------------
+Dieses Dokument ist ein LaTeX-Preprint und kann direkt auf arXiv
+eingereicht werden (Kategorie: gr-qc oder quant-ph).
+Zum Kompilieren: pdflatex + bibtex (2x pdflatex).
+
+
+PDF ERZEUGEN (einmalig nötig)
+------------------------------
+1. overleaf.com aufrufen und kostenlosen Account erstellen
+2. "New Project" → "Upload Project"
+3. ssc_paper.tex und ssc_references.bib hochladen
+4. Auf "Compile" klicken → PDF erscheint rechts
+5. PDF herunterladen und in diesen Ordner legen
+
+
+URHEBERSCHAFT
+-------------
+Diese Theorie wurde am 4. Mai 2026 von Max Meeuvissen entwickelt,
+ohne Vorkenntnisse der relevanten Fachliteratur.
+Kontakt: maxmee18@gmail.com

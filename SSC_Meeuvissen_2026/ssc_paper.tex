@@ -1,0 +1,872 @@
+% ============================================================
+%  Spacetime-Superposition Complementarity (SSC)
+%  Author: Max Meeuvissen
+%  Date:   May 4, 2026
+%  First record preprint — version 1.0
+% ============================================================
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage[colorlinks=true,
+            linkcolor=blue!70!black,
+            citecolor=blue!70!black,
+            urlcolor=blue!70!black]{hyperref}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{setspace}
+\usepackage{fancyhdr}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{enumitem}
+\usepackage{mdframed}
+\usepackage{titlesec}
+
+\onehalfspacing
+
+% ── Theorem environments ─────────────────────────────────
+\newtheorem{principle}{Principle}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{definition}{Definition}
+
+% ── Styled box for open problems ─────────────────────────
+\newmdenv[
+  backgroundcolor=gray!8,
+  linecolor=gray!50,
+  roundcorner=4pt,
+  innertopmargin=9pt,
+  innerbottommargin=9pt,
+  innerleftmargin=10pt,
+  innerrightmargin=10pt
+]{openbox}
+
+% ── Page style ────────────────────────────────────────────
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\small Meeuvissen (2026) — Preprint v1.0}
+\lhead{\small Spacetime-Superposition Complementarity (SSC)}
+\cfoot{\small\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+% ── Title ────────────────────────────────────────────────
+\title{%
+  \textbf{Spacetime-Superposition Complementarity (SSC):}\\[0.3em]
+  \textbf{A Conceptual Pre-Geometric Framework}\\[0.3em]
+  \textbf{for Cosmology, Singularities, and}\\[0.3em]
+  \textbf{the Quantum Measurement Problem}\\[1.2em]
+  {\large\normalfont\itshape Preprint v1.0 — Conceptual First Sketch}
+}
+
+\author{%
+  \textbf{Max Meeuvissen}\\[0.4em]
+  \normalsize Independent Researcher\\[0.15em]
+  \normalsize \texttt{maxmee18@gmail.com}\\[0.6em]
+  \normalsize\itshape
+  Developed in independent dialogue with Claude (Anthropic), May 2026
+}
+
+\date{%
+  \normalsize May 4, 2026\\[0.4em]
+  \small
+  \textit{This document constitutes a first-record preprint establishing}\\
+  \textit{priority and authorship of the conceptual framework described herein.}\\
+  \textit{The author had no prior knowledge of the related literature}\\
+  \textit{at the time the theory was developed.}
+}
+
+% ============================================================
+\begin{document}
+% ============================================================
+
+\maketitle
+\thispagestyle{fancy}
+
+\begin{abstract}
+\noindent
+We propose a conceptual framework — the
+\emph{Spacetime-Superposition Complementarity} (SSC) principle — in
+which spacetime and quantum superposition are mutually exclusive,
+complementary states of a single fundamental substrate.  In the
+absence of spacetime, a pre-geometric \emph{superstate} obtains: a
+condition in which all possible configurations co-exist
+simultaneously, without spatial or temporal distinction.  Spacetime
+is not the stage on which physics occurs but the mechanism by which
+the superstate collapses into concrete, distinguishable reality.  We
+show that this principle provides a natural language for several open
+problems: (i)~the target of cosmic expansion is the pre-geometric
+superstate rather than an empty void; (ii)~gravitational singularities
+mark a phase transition from spacetime back into the superstate, not a
+breakdown of physics; (iii)~the black hole information paradox
+dissolves because information is a spacetime-dependent concept, not a
+universal fundamental; (iv)~spacetime propagates from a singular
+starting point into the superstate like a wavefront; what triggered
+this starting point is unanswerable within the framework because
+causality is itself a product of spacetime — the theory explicitly
+leaves this as a foundational open question; and (v)~a complete cyclic
+cosmology follows naturally.  The framework is
+conceptual and has not yet been given a mathematical formulation; all
+specific mathematical open problems are enumerated.  This paper serves
+as a first public record of the theory and establishes authorship by
+\textbf{Max Meeuvissen}.
+
+\bigskip\noindent
+\textbf{Keywords:} pre-geometry, quantum superposition, spacetime
+emergence, black hole singularities, information paradox, cyclic
+cosmology, quantum measurement problem, phase transition
+\end{abstract}
+
+\newpage
+\tableofcontents
+\newpage
+
+% ============================================================
+\section{Introduction}
+\label{sec:intro}
+% ============================================================
+
+One of the deepest unresolved tensions in fundamental physics is
+whether spacetime is a fundamental entity or an emergent one.  General
+Relativity (GR) treats spacetime as a smooth, continuous manifold
+shaped by mass-energy; Quantum Mechanics (QM) operates within a fixed
+spacetime background and describes physical systems in terms of
+superposition and probabilistic evolution.  The two frameworks are
+mathematically inconsistent at extreme scales, and any theory of
+quantum gravity must eventually resolve this tension.
+
+The present paper introduces a conceptual framework developed
+independently by the author in May 2026.  The starting point was
+deliberately naive: \emph{What is ``empty'' space, fundamentally?}
+Rather than invoking the quantum vacuum or a spacetime background,
+the author pursued the question through step-by-step logical reasoning
+and arrived at the following answer: the absence of spacetime is not
+nothing.  It is a \emph{pre-geometric superstate} — a condition in
+which all possible configurations exist simultaneously, unconstrained
+by location, time, or causal order.
+
+From this single conceptual shift, a cascade of implications follows
+for the measurement problem, cosmic expansion, black hole singularities,
+the information paradox, and the origin of the universe.
+
+\subsection{Scope and Transparency}
+
+This paper is explicitly a \emph{conceptual first sketch}.  It makes
+no claim to mathematical completeness.  What it does claim:
+\begin{enumerate}[label=(\alph*)]
+  \item a clear statement of the logical structure of the theory
+        (Sections~\ref{sec:superstate}–\ref{sec:cyclic});
+  \item its relation to — and distinction from — the existing literature
+        (Section~\ref{sec:related});
+  \item an explicit enumeration of the mathematical work that remains
+        (Section~\ref{sec:open});
+  \item a documented first record with date, author, and development
+        context.
+\end{enumerate}
+
+\noindent
+The theory was developed in dialogue with the AI assistant Claude
+(Anthropic, 2026).  The dialogue served as a structured sounding board
+comparable to discussion with a knowledgeable interlocutor.  The
+intellectual content, questions, and conclusions are those of the author.
+
+\subsection{Independent Development}
+
+The theory was developed without prior familiarity with the relevant
+literature.  The author was not aware of Wheeler's pre-geometry program,
+Loop Quantum Gravity, the ``It from Qubit'' research collaboration,
+Subhash Kak's related work, or cyclic cosmological models at the time
+of development.  Parallels to the existing literature — documented in
+Section~\ref{sec:related} — were identified \emph{after} the theory
+was formulated.  This is stated not as a boast but as a matter of
+record: it establishes that the framework was arrived at independently,
+which is relevant to questions of priority.
+
+% ============================================================
+\section{The Pre-Geometric Superstate}
+\label{sec:superstate}
+% ============================================================
+
+\subsection{Rethinking ``Empty'' Space}
+
+The conventional view treats mass-free space as a background medium:
+in classical physics, an inert container; in quantum field theory, a
+vacuum with zero-point fluctuations and virtual particle activity.
+In both cases, space is defined \emph{within} spacetime.
+
+We propose something categorically different.
+
+\begin{definition}[Pre-Geometric Superstate]
+\label{def:superstate}
+The \emph{pre-geometric superstate} (hereafter: the superstate) is the
+condition that obtains in the complete absence of spacetime.  In the
+superstate:
+\begin{itemize}
+  \item All possible particle configurations, energy distributions,
+        and field values exist simultaneously.
+  \item There is no spatial location, temporal ordering, or causal
+        structure.
+  \item There is no distinguishability between configurations and
+        therefore no information in any formal sense (Shannon, von
+        Neumann, or otherwise).
+  \item The superstate is not ``nothing.''  It is the maximal
+        superposition of all possibilities.
+\end{itemize}
+\end{definition}
+
+\noindent
+This concept is categorically distinct from the QFT vacuum, which is
+defined within a spacetime background and carries definite energy
+density.  The superstate is \emph{prior to} spacetime, not within it.
+
+\subsection{The Complementarity Principle}
+\label{sec:complementarity}
+
+The central thesis of this framework is stated as follows.
+
+\begin{principle}[Spacetime-Superposition Complementarity (SSC)]
+\label{pr:ssc}
+Spacetime and quantum superposition are complementary, mutually
+exclusive states of a single fundamental substrate.
+\begin{itemize}
+  \item \textbf{Where spacetime exists:} quantum superposition
+        collapses into concrete states.  Entities acquire definite
+        positions, momenta, and state identities.  Mass, energy, and
+        distinguishability exist.
+  \item \textbf{Where spacetime is absent:} total superposition
+        obtains.  No decoherence mechanism is available.  No definite
+        states exist.
+\end{itemize}
+\end{principle}
+
+\noindent
+This should be carefully distinguished from the standard quantum
+mechanical picture.  In Copenhagen, many-worlds, and decoherence
+interpretations alike, spacetime is a fixed background, and superposition
+either persists or collapses \emph{within} it.  In SSC, spacetime is
+not the arena within which superposition collapses — spacetime
+\emph{is} the collapse mechanism.
+
+\subsection{Spacetime as the Physical Collapse Mechanism}
+
+The quantum measurement problem asks: what causes a quantum
+superposition to yield a definite outcome?  Existing physical
+approaches invoke environmental decoherence~\citep{zurek2003},
+objective reduction tied to spacetime
+curvature~\citep{penrose1996}, or spontaneous
+localization~\citep{ghirardi1986}.  Observer-centric interpretations
+relocate rather than resolve the question~\citep{bohr1935}.
+
+SSC states a different answer:
+
+\begin{principle}[Spacetime as Collapse]
+\label{pr:collapse}
+The existence of spacetime is the physical mechanism of quantum
+collapse.  No observer, measurement apparatus, or environment is
+required.  Wherever spacetime obtains, total superposition is
+structurally impossible.
+\end{principle}
+
+\noindent
+The question is thereby reframed: rather than asking what collapses a
+superposition \emph{within} spacetime, we ask what gives rise to
+spacetime such that superposition cannot persist within it.
+
+% ============================================================
+\section{Cosmological Implications}
+\label{sec:cosmo}
+% ============================================================
+
+\subsection{The Target of Cosmic Expansion}
+\label{sec:expansion}
+
+The standard cosmological model describes the universe as expanding:
+the metric of spacetime grows over time.  The question ``into what does
+the universe expand?'' has no standard answer, because GR contains no
+``outside'' — the question is typically treated as ill-posed.
+
+SSC gives a definite answer.
+
+\begin{conjecture}[Expansion as Superstate Propagation]
+\label{conj:expansion}
+The expansion of the universe is the propagation of the spacetime
+boundary into the pre-geometric superstate.  There is no expansion
+into empty space; there is no exterior void.  The boundary of the
+observable universe is the active frontier between the spacetime phase
+and the superstate.
+\end{conjecture}
+
+\noindent
+Several consequences follow:
+\begin{itemize}
+  \item The expansion velocity of the universe and the propagation
+        velocity of the spacetime boundary are \emph{the same
+        quantity} — not two correlated processes but one.
+  \item As the spacetime boundary advances, regions of the superstate
+        are ``entered'' by spacetime: the total superposition of that
+        region collapses into concrete configurations of mass, energy,
+        and field states.
+  \item The emergence of matter and energy at the cosmic scale is not
+        an assumption; it is a consequence of Principle~\ref{pr:ssc}.
+        Where spacetime arrives, concrete states must crystallize.
+  \item The accelerating expansion observed cosmologically may reflect
+        a property of the spacetime-superstate interface itself rather
+        than a mysterious intrinsic energy density.  This hypothesis
+        is speculative and left as an open problem
+        (Section~\ref{sec:open}, Problem~4).
+\end{itemize}
+
+\subsection{Black Holes as Inverse Expansion: The Phase Transition Hypothesis}
+\label{sec:blackholes}
+
+GR predicts that at a gravitational singularity, spacetime curvature
+diverges.  This is widely taken to signal a breakdown of the theory.
+SSC offers a different reading.
+
+\begin{conjecture}[Singularity as Phase Transition]
+\label{conj:singularity}
+The gravitational singularity is not a mathematical pathology or a
+failure of physics.  It is a \emph{phase transition} from the
+spacetime phase back into the pre-geometric superstate.
+\end{conjecture}
+
+\noindent
+The analogy is instructive.  Water does not become ``infinitely hot''
+at \(100\,^{\circ}\mathrm{C}\): it changes state.  A model that ignores
+the liquid-to-gas transition would incorrectly predict diverging
+temperature.  The model fails not because thermodynamics breaks down
+but because it lacks the phase-transition description.  SSC proposes
+an analogous situation for GR: the divergence of curvature at a
+singularity is the symptom of a missing phase-transition term in the
+equations, not an intrinsic failure of geometry.
+
+Under Conjecture~\ref{conj:singularity}:
+\begin{itemize}
+  \item A black hole singularity is a region where mass density has
+        driven the system across the spacetime-to-superstate phase
+        boundary.
+  \item Beyond the singularity there is no ``further place'' in a GR
+        sense.  There is the superstate — the same substrate into
+        which the universe also expands at its outer boundary.
+  \item \textbf{Black holes and cosmic expansion are inverse
+        manifestations of the same underlying mechanism.}  Expansion
+        converts superstate into spacetime; a singularity converts
+        spacetime back into superstate.  The two processes are
+        opposite directions along the same spacetime-superstate
+        boundary.
+\end{itemize}
+
+\subsection{The Information Paradox}
+\label{sec:information}
+
+Hawking's calculation~\citep{hawking1975} showed that black holes emit
+thermal radiation and eventually evaporate, apparently destroying all
+information about the infalling matter.  This contradicts the unitarity
+of quantum mechanics and has generated decades of work including the
+firewall argument~\citep{almheiri2013}, the island
+formula~\citep{penington2020,almheiri2020}, and the original statement
+of the paradox~\citep{hawking2005}.
+
+SSC does not locate where the information goes.  It attacks the
+premise.
+
+\begin{principle}[Information as Spacetime Product]
+\label{pr:information}
+Information — in the sense of Shannon entropy, von Neumann entropy,
+or any formal definition — presupposes distinguishability, temporal
+ordering, and state identity.  These properties exist only within
+spacetime.  Information is not a fundamental concept; it is a
+derived concept that requires spacetime for its definition.
+\end{principle}
+
+\noindent
+The argument:
+\begin{enumerate}
+  \item Information requires distinguishable states (\(A \neq B\)).
+  \item Distinguishability requires that \(A\) and \(B\) differ in a
+        spacetime-defined property (position, momentum, spin axis,
+        etc.)\ or occupy distinct spacetime regions.
+  \item In the superstate, there is no spacetime and therefore no
+        distinguishability.
+  \item Therefore, in the superstate, information is not
+        \emph{destroyed} — the category of information becomes
+        \emph{undefined}.
+\end{enumerate}
+
+The information paradox thus dissolves not by finding the information's
+hiding place, but by recognizing that the conservation law
+``information is preserved'' is a statement that applies within
+spacetime and cannot, without independent argument, be extended to
+regions that lie outside of spacetime.  Unitarity is a property of
+time-evolution operators defined on Hilbert spaces within spacetime;
+its applicability at a spacetime-to-superstate boundary is an open
+question, not an axiom.
+
+% ============================================================
+\section{Cyclic Cosmology under SSC}
+\label{sec:cyclic}
+% ============================================================
+
+The SSC framework implies a complete cyclic cosmology that requires no
+external input, no prior cause, and no external space.
+
+\subsection*{Phase 1 — The Superstate}
+
+No space.  No time.  No causal ordering.  The superstate is a maximal
+superposition of all possible configurations — including the
+configuration in which spacetime begins to exist.  Since there is no
+time axis, ``before'' and ``after'' have no meaning.
+
+\subsection*{Phase 2 — Origin of Spacetime (The Big Bang)}
+
+\textbf{Correction of an earlier formulation.}  A prior version of
+SSC stated that the origination of spacetime requires no external cause
+because it is ``one of the simultaneously realized configurations of
+the superstate itself.''  This formulation is internally inconsistent:
+it implicitly describes a process — simultaneous self-realization —
+that would itself require either time or causal structure to be
+meaningful.  The corrected position is as follows.
+
+Spacetime does not arise spontaneously at every point of the superstate.
+Rather, it propagates from a \emph{singular starting point} outward
+into the surrounding superstate, like a wavefront.  This starting point
+is the Big Bang.
+
+What triggered the starting point?  Within SSC, this question is not
+answerable.  Causation is a property of spacetime: cause precedes
+effect only because a time axis orders events.  In the absence of
+spacetime, there is no causal structure and no framework within which
+an explanation could be formulated.  The theory deliberately leaves the
+origin of the starting point open as a foundational limit.
+
+\paragraph{Two approaches to the origin of spacetime.}
+
+SSC accommodates two structurally distinct pictures of how spacetime
+originates, with different degrees of theoretical commitment.
+
+\textbf{Primary version (core thesis):}  A single spacetime episode
+begins at one starting point and propagates outward as a wavefront into
+the superstate.  The cause of the starting point cannot be addressed
+within the theory.  This is the position adopted in the main body of
+SSC.
+
+\textbf{Alternative version (speculative outlook, not core thesis):}
+Multiple spacetime ``bubbles'' originate independently at different
+points within the superstate and each expands outward.  Where two
+bubbles meet, they dock at an inter-dimensional boundary.  This variant
+would explain why spacetime does not arise uniformly everywhere at once,
+and opens the possibility of a multiverse structure embedded in the
+superstate.  However, it is significantly more difficult to formalize,
+raises additional questions about the nature of inter-bubble boundaries,
+and is presented here solely as a speculative direction for future
+investigation — not as part of the current framework.
+
+This distinction in approach is structurally related to — but distinct
+from — the Hartle-Hawking no-boundary proposal~\citep{hartle1983},
+which also removes the question of ``what came before.''  In the
+no-boundary proposal, imaginary time eliminates the boundary while
+remaining within a spacetime-like framework.  In SSC, the pre-Big-Bang
+state is not a modified spacetime but a genuinely pre-geometric
+superstate.
+
+\subsection*{Phase 3 — Expansion}
+
+Spacetime propagates outward into the superstate.  At the advancing
+boundary, the superstate collapses: mass, energy, and field
+configurations crystallize.  The universe grows in extent.
+Gravitational attraction accumulates as mass increases.
+
+\subsection*{Phase 4 — Gravitational Dominance and Reversal}
+
+At a critical point, the cumulative gravitational attraction of the
+universe's mass exceeds the expansion drive.  The universe begins to
+contract.  Whether this is consistent with the presently observed
+accelerating expansion is an open question (Section~\ref{sec:open},
+Problem~6); it may require a modified treatment of dark energy within
+SSC.
+
+\subsection*{Phase 5 — Universal Collapse}
+
+The universe contracts.  Density increases universally.  As in a black
+hole singularity, the density reaches the phase-transition threshold:
+the system transitions from spacetime back into the superstate — but
+now for the entire universe at once.
+
+\subsection*{Phase 6 — Return to the Superstate}
+
+Spacetime no longer exists.  The system is again in the pre-geometric
+superstate.  All configurations are simultaneously present, including
+the origination of a new spacetime.  The cycle is complete.
+
+\bigskip
+\noindent
+This cyclic model is self-contained.  It requires no prior spacetime,
+no external cause, and no external space.  The superstate is itself the
+``substrate'' from which spacetime episodes emerge and to which they
+return.
+
+% ============================================================
+\section{Relation to Existing Literature}
+\label{sec:related}
+% ============================================================
+
+Parallels to the following research programs were identified by the
+author \emph{after} the theory was developed.  We map each parallel
+carefully and identify the points of departure.
+
+\subsection{Pre-Geometry (Wheeler, Penrose)}
+
+Wheeler introduced \emph{pre-geometry}: a substrate more primitive than
+spacetime from which spacetime geometry emerges~\citep{wheeler1968}.
+His ``It from Bit'' conjecture proposed that physical reality is
+fundamentally informational~\citep{wheeler1990}.  Penrose's spin
+network formalism~\citep{penrose1971} and twistor theory treat
+spacetime as emergent from a combinatorial structure.  Recent
+approaches to quantum gravity continue this program~\citep{oriti2009}.
+
+\textbf{Relation to SSC.}  SSC is broadly consistent with the
+pre-geometry paradigm: the superstate plays the role of Wheeler's
+pre-geometric substrate.  The specific novelty of SSC is identifying
+the pre-geometric substrate with \emph{total quantum superposition} and
+specifying the mutual exclusivity of spacetime and superposition as the
+defining dynamical relationship.  SSC also departs from Wheeler's ``It
+from Bit'' by arguing that information is \emph{not} fundamental —
+precisely the opposite conclusion.
+
+\subsection{``It from Qubit'' and Holographic Approaches}
+
+Van Raamsdonk showed that spacetime connectivity is related to quantum
+entanglement between boundary degrees of
+freedom~\citep{vanraamsdonk2010}.  Maldacena and Susskind's ER=EPR
+conjecture identifies Einstein-Rosen bridges with EPR
+entanglement~\citep{maldacena2013}.  The ``It from Qubit'' program
+broadly investigates how spacetime geometry emerges from quantum
+information~\citep{preskill2017}.
+
+\textbf{Relation to SSC.}  These programs treat quantum information as
+fundamental and derive spacetime from it.  SSC takes the opposite
+stance: information is a spacetime product and is not defined outside
+spacetime.  Additionally, SSC's superstate is not a quantum information
+structure — it is a condition that \emph{precedes} the existence of
+information as a defined concept.
+
+\subsection{Loop Quantum Gravity}
+
+Loop Quantum Gravity (LQG) quantizes spacetime directly, yielding a
+discrete quantum geometry (spin foams / spin networks) at the Planck
+scale~\citep{rovelli1988}.  Spacetime is not fundamental in LQG; it
+emerges from the underlying combinatorial structure.  LQG
+actively investigates singularity resolution, showing that the Big
+Bang and black hole singularities may be replaced by quantum
+bounces~\citep{ashtekar2006}.
+
+\textbf{Relation to SSC.}  LQG and SSC share the view that spacetime
+is not fundamental.  LQG replaces continuous spacetime with discrete
+quantum geometry.  SSC replaces it with a pre-geometric superposition
+substrate.  SSC's phase-transition hypothesis for singularities is at
+least formally compatible with LQG's singularity-resolution picture,
+though the underlying mechanisms are different.
+
+\subsection{Subhash Kak (2018)}
+
+Kak has written on the intersection of quantum mechanics and
+cosmology~\citep{kak2018}.  His work contains the structural claim
+that the loss of superposition is related to the appearance of spatial
+expansion — a parallel that is notable given SSC's independent
+identification of spacetime propagation with superposition collapse.
+
+\textbf{Relation to SSC.}  This parallel was identified after the
+theory was formulated.  SSC arrived at a structurally similar idea
+independently.  Kak's framework differs in motivation, scope, and
+formal apparatus.  A precise comparison requires a detailed reading of
+the relevant papers, which is left for future work.  The author notes
+that the exact bibliographic details of Kak's 2018 contribution require
+verification; the reference is included as a pointer to a related line
+of thought.
+
+\subsection{Objective Collapse Theories (Penrose, GRW)}
+
+Penrose's objective reduction (OR) proposes that superposition is
+unstable in curved spacetime and collapses when the gravitational
+self-energy of the superposed states reaches the Planck
+energy~\citep{penrose1996}.  The GRW spontaneous-localization
+model introduces stochastic collapse without an
+observer~\citep{ghirardi1986}.  Both treat collapse as a physical
+(non-observer-based) process within spacetime.
+
+\textbf{Relation to SSC.}  SSC agrees that collapse is objective and
+physical.  The key distinction is categorical: in OR and GRW, collapse
+happens \emph{within} spacetime due to crossing a physical threshold.
+In SSC, spacetime itself \emph{is} the collapse mechanism.  The causal
+direction is reversed.
+
+\subsection{Cyclic Cosmologies}
+
+Several cyclic cosmological models exist.  The ekpyrotic / cyclic
+model~\citep{steinhardt2002} involves periodic collisions of branes.
+Penrose's Conformal Cyclic Cosmology (CCC)~\citep{penrose2010} treats
+the far future of one aeon as the Big Bang of the next, using conformal
+rescaling.  Loop Quantum Cosmology provides a bounce
+mechanism~\citep{ashtekar2006}.
+
+\textbf{Relation to SSC.}  SSC's cyclic model is unique in passing
+\emph{fully outside} spacetime between cycles.  In the ekpyrotic
+model, CCC, and LQC bounce, some spacetime-like structure persists
+throughout; the ``reset'' occurs at the boundary of a spacetime epoch.
+In SSC, the inter-cycle state is the pre-geometric superstate — a
+condition without spacetime, time, or information.  The cycle is not
+spacetime-to-spacetime but spacetime-to-superstate-to-spacetime.
+
+% ============================================================
+\section{What Is Genuinely New}
+\label{sec:new}
+% ============================================================
+
+To the best of the author's knowledge, the following combination of
+ideas does not appear in the literature in this form.  Each item is
+stated as a specific claim for which the author asserts priority.
+
+\begin{enumerate}
+  \item \textbf{The SSC Principle itself}
+        (Principle~\ref{pr:ssc}).  Spacetime and superposition as
+        mutually exclusive, complementary states of a single
+        fundamental substrate — not merely that spacetime is emergent,
+        but that its existence is definitionally incompatible with
+        superposition, and vice versa.
+
+  \item \textbf{Spacetime as the physical collapse mechanism}
+        (Principle~\ref{pr:collapse}).  The identification of
+        spacetime's existence — not measurement, not environment, not
+        a threshold condition — as the direct physical cause of
+        quantum collapse.
+
+  \item \textbf{Cosmic expansion as superstate propagation}
+        (Conjecture~\ref{conj:expansion}).  The identification of
+        cosmic expansion with the advance of the spacetime boundary
+        into the pre-geometric superstate, such that the two are
+        numerically identical — one process, not two correlated ones.
+
+  \item \textbf{Gravitational singularity as phase transition to the
+        superstate} (Conjecture~\ref{conj:singularity}).  The
+        singularity as a change of state out of the spacetime phase,
+        in analogy with thermodynamic phase transitions, rather than a
+        breakdown of physics.
+
+  \item \textbf{Expansion and black holes as inverse processes of the
+        same mechanism.}  The outer boundary of cosmic expansion and
+        the interior boundary of a black hole singularity as opposite
+        directions of the spacetime-superstate interface.
+
+  \item \textbf{Information as a spacetime product}
+        (Principle~\ref{pr:information}).  The argument that
+        information (Shannon, von Neumann, or otherwise) is
+        constitutively dependent on spacetime and cannot be defined
+        outside it — dissolving the information paradox not by
+        locating the information but by challenging the universality
+        of the conservation premise.
+
+  \item \textbf{A cyclic cosmology through the superstate.}  A
+        complete cosmological cycle that passes fully outside spacetime
+        between episodes, requiring no prior cause and no external
+        framework.
+\end{enumerate}
+
+% ============================================================
+\section{Open Questions and Required Mathematical Work}
+\label{sec:open}
+% ============================================================
+
+This paper is a conceptual sketch.  The following problems must be
+addressed before SSC can be evaluated as a formal physical theory.
+They are stated explicitly so that the boundary between the established
+framework and the incomplete work is unambiguous.
+
+\begin{openbox}
+\textbf{Open Problem 1 — What triggered the starting point of spacetime?}\\
+SSC identifies the Big Bang as a singular starting point from which
+spacetime propagates into the superstate like a wavefront.  What caused
+or triggered this starting point is explicitly unanswerable within the
+framework, because causation presupposes spacetime.  Whether a more
+fundamental account is possible — without invoking causal language —
+remains the deepest open question of the theory.
+\end{openbox}
+
+\begin{openbox}
+\textbf{Open Problem 2 — Energy accounting at the spacetime boundary.}\\
+What happens energetically when the spacetime wavefront advances into
+the superstate?  Does energy ``appear'' at the boundary (consistent
+with conservation within spacetime) or is energy itself a spacetime-
+dependent concept applicable only post-transition?  A precise formulation
+requires specifying whatever structure, if any, governs the boundary.
+\end{openbox}
+
+\begin{openbox}
+\textbf{Open Problem 3 — Sharpness of the transition at the expansion boundary.}\\
+Is the spacetime-superstate phase transition sharp (first-order) or
+continuous (second-order)?  A sharp transition implies a definite
+boundary with a discontinuous change of state; a continuous transition
+implies an intermediate zone with partial properties.  These scenarios
+carry different observational implications for the structure of the
+early universe and the cosmic horizon.
+\end{openbox}
+
+\begin{openbox}
+\textbf{Open Problem 4 — Hawking radiation in SSC: does it carry information?}\\
+If the gravitational singularity marks a phase transition to the
+superstate, what is the SSC account of Hawking
+radiation~\citep{hawking1975}?  Is it emitted from the spacetime-
+superstate interface at the singularity?  SSC's
+Principle~\ref{pr:information} implies it does not carry information
+in the Shannon sense — but a precise derivation of Hawking radiation
+within the SSC framework is required to confirm this.
+\end{openbox}
+
+\begin{openbox}
+\textbf{Open Problem 5 — Dark energy within SSC.}\\
+Observations indicate the cosmic expansion is accelerating.  In SSC,
+expansion is the propagation of the spacetime wavefront into the
+superstate.  Dark energy might reflect an intrinsic property of the
+spacetime-superstate interface — a boundary tension or surface energy
+term — rather than a constant energy density of spacetime itself.
+A mathematical model of the interface would need to reproduce the
+observed equation of state \(w \approx -1\) and to explain the
+coincidence between the onset of acceleration and the current epoch.
+\end{openbox}
+
+\begin{openbox}
+\textbf{Open Problem 6 — Mathematical structure of the superstate.}\\
+What mathematical object describes the superstate?  Candidate
+frameworks include: a universal wavefunction without a Hilbert space
+defined over spacetime; a path integral over all possible geometries
+(cf.\ Hartle-Hawking~\citep{hartle1983}), extended to the pre-geometric
+regime; or an entirely new structure not present in the current
+mathematical physics toolkit.  This is the most fundamental formal
+open problem of the framework.
+\end{openbox}
+
+\begin{openbox}
+\textbf{Open Problem 7 — Can the alternative (multi-bubble) approach be formalized?}\\
+The speculative alternative version of SSC (Section~\ref{sec:cyclic},
+Phase~2) posits that multiple spacetime bubbles originate independently
+in the superstate and dock at inter-dimensional boundaries.  If this
+picture is to be taken seriously, it requires: (a)~a precise definition
+of ``bubble boundary'' in pre-geometric terms; (b)~a mechanism for
+bubble docking that does not presuppose causal structure; and (c)~an
+account of the observable consequences of a multi-bubble structure,
+including potential signatures of inter-bubble boundaries in the
+cosmic microwave background or large-scale structure.
+\end{openbox}
+
+% ============================================================
+\section{Discussion}
+\label{sec:discussion}
+% ============================================================
+
+The SSC framework was arrived at by pursuing a conceptual question
+without mathematical machinery.  This is both a strength and a
+limitation.
+
+The strength lies in conceptual generality.  SSC unifies a set of
+otherwise disconnected puzzles — the measurement problem, the target of
+cosmic expansion, the nature of singularities, the information paradox,
+the origin of the universe — under a single organizing principle.  The
+internal consistency of the implications suggests the underlying
+conceptual structure is productive.
+
+The limitation is the absence of mathematical formalization.  Without
+quantitative predictions, SSC cannot be directly compared to formal
+theories or tested against observations.  The open problems in
+Section~\ref{sec:open} are not peripheral details; they are the core
+of the research programme required to transform SSC from a conceptual
+framework into a physical theory.
+
+The author notes that this trajectory — conceptual insight preceding
+mathematical formalization — is not without precedent.  The equivalence
+of inertial and gravitational mass, the equivalence of simultaneous
+events, and Bohr's complementarity principle were all formulated
+conceptually before receiving their mathematical expressions.  This is
+offered not as a defense of incompleteness but as context for the
+value of clearly stated conceptual frameworks.
+
+Finally, the author underscores the importance of the following fact:
+the framework was developed without knowledge of the related literature.
+The post-hoc identification of parallels in pre-geometry, LQG, and
+``It from Qubit'' does not diminish the originality of SSC's specific
+combination of claims; rather, the convergence of independent reasoning
+toward similar territory may itself be a signal that the conceptual
+territory is productive.
+
+% ============================================================
+\section{Conclusion}
+\label{sec:conclusion}
+% ============================================================
+
+We have presented the Spacetime-Superposition Complementarity (SSC)
+framework, developed independently by Max Meeuvissen in May 2026.  The
+central principle is that spacetime and quantum superposition are
+mutually exclusive states of a pre-geometric substrate.  In the absence
+of spacetime, a pre-geometric superstate obtains — a condition of
+maximal superposition without location, time, or information.  Spacetime
+is the mechanism of quantum collapse, not its arena.
+
+From this single principle, the following results follow:
+\begin{itemize}
+  \item Cosmic expansion is the propagation of spacetime into the
+        pre-geometric superstate.
+  \item Gravitational singularities are phase transitions from
+        spacetime back into the superstate.
+  \item Black holes and cosmic expansion are inverse manifestations
+        of the same spacetime-superstate boundary mechanism.
+  \item Information is a spacetime-dependent concept; the information
+        paradox rests on a false universalization of a spacetime-local
+        conservation law.
+  \item Spacetime propagates from a singular starting point like a
+        wavefront into the superstate; the cause of this starting point
+        is unanswerable within the framework, as causation presupposes
+        spacetime — the theory explicitly acknowledges this limit.
+  \item A complete, self-contained cyclic cosmology follows naturally.
+\end{itemize}
+
+\noindent
+The framework is consistent with but distinct from pre-geometry, Loop
+Quantum Gravity, and ``It from Qubit'' programs.  The specific
+combination of claims enumerated in Section~\ref{sec:new} is, to the
+author's knowledge, original.
+
+This paper serves as a first public record.  Mathematical formalization
+is the necessary next step and is explicitly left as future work.  The
+author welcomes correspondence and collaboration toward that end.
+
+\bigskip\bigskip
+
+\begin{center}
+\itshape
+``The most incomprehensible thing about the universe\\
+is that it is comprehensible.''\\[0.3em]
+\upshape — Albert Einstein
+\end{center}
+
+\bigskip
+
+\noindent\textbf{Acknowledgments.}\quad
+The author thanks the AI assistant Claude (Anthropic, 2026) for
+serving as a structured dialogue partner during the development of this
+framework.  The intellectual content, questions, and conclusions are
+those of the author.
+
+\bigskip\noindent\textbf{Competing interests.}\quad None.
+
+\bigskip\noindent\textbf{Funding.}\quad None.
+
+\bigskip\noindent\textbf{First record.}\quad
+This document was first written on \textbf{May 4, 2026}.  It
+constitutes the author's first public statement of the theory.  The
+dialogue in which the theory was developed took place on the same date.
+The author asserts intellectual property of the conceptual framework
+described herein under the above authorship and date.
+
+\newpage
+\bibliographystyle{unsrtnat}
+\bibliography{ssc_references}
+
+\end{document}
