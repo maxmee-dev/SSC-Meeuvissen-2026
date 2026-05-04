@@ -672,6 +672,267 @@ stated as a specific claim for which the author asserts priority.
 \end{enumerate}
 
 % ============================================================
+\section{Mathematical Framework}
+\label{sec:math}
+% ============================================================
+
+The following section presents the first mathematical formalization
+of SSC. To maintain scientific integrity, every claim is labelled
+with one of three statuses:
+
+\begin{itemize}[noitemsep]
+  \item \textbf{[Established]} — mathematically well-defined and
+        internally consistent; no further derivation needed.
+  \item \textbf{[Candidate]} — physically motivated and structurally
+        coherent, but not yet derived from deeper principles.
+  \item \textbf{[Open]} — the result is conjectured but a formal
+        derivation has not been carried out.
+\end{itemize}
+
+This section is offered as a research programme. The author regards
+honest labelling of mathematical status as a scientific obligation.
+
+% ─────────────────────────────────────────────────────────────
+\subsection{The Order Parameter \texorpdfstring{$\Phi$}{Phi}}
+
+\begin{definition}[The SSC Order Parameter]
+\label{def:phi}
+Let $\Phi : \mathcal{M} \times \mathbb{R} \to [0,1]$ be a scalar
+field on a manifold $\mathcal{M}$, with
+\begin{align*}
+  \Phi = 0 &\quad \Longrightarrow \quad
+    \text{complete superstate — no spacetime, no particles, no identity,}\\
+  \Phi = 1 &\quad \Longrightarrow \quad
+    \text{complete spacetime — classical GR applies exactly,}\\
+  0 < \Phi < 1 &\quad \Longrightarrow \quad
+    \text{partial spacetime — quantum regime, positions indeterminate.}
+\end{align*}
+\end{definition}
+
+\textbf{[Established.]} $\Phi$ carries two distinct physical
+meanings that must not be conflated.
+\emph{Dimension~1 (existence):} whether particles exist as defined
+objects with mass, charge, and identity. This is violated only at
+$\Phi = 0$; any $\Phi > 0$ suffices for particle identity.
+\emph{Dimension~2 (completeness):} whether positions of existing
+particles are determinate. This requires $\Phi = 1$; for
+$0 < \Phi < 1$ particles exist but have no defined location.
+These two dimensions correspond, respectively, to the distinction
+between the superstate ($\Phi = 0$) and quantum superposition
+($0 < \Phi < 1$), and between quantum superposition and classical
+behaviour ($\Phi = 1$).
+
+\begin{definition}[Complementarity Condition]
+\label{def:complementarity}
+Define the superstate fraction $\Psi = 1 - \Phi$. Then at every
+point:
+\begin{equation}
+  \Phi + \Psi = 1, \qquad 0 \leq \Phi,\, \Psi \leq 1.
+  \label{eq:complementarity}
+\end{equation}
+\end{definition}
+
+\textbf{[Established.]} Equation~\eqref{eq:complementarity} is the
+direct mathematical expression of the SSC principle: at every point,
+the sum of the spacetime fraction and the superstate fraction is
+unity. The two phases are mutually exclusive and collectively
+exhaustive.
+
+% ─────────────────────────────────────────────────────────────
+\subsection{The Extended Einstein Field Equations}
+
+Einstein's original field equations (natural units $c = G = 1$):
+\begin{equation}
+  G_{\mu\nu} = 8\pi T_{\mu\nu},
+  \label{eq:einstein}
+\end{equation}
+where $G_{\mu\nu} = R_{\mu\nu} - \tfrac{1}{2}g_{\mu\nu}R$ is the
+Einstein tensor and $T_{\mu\nu}$ is the stress-energy tensor.
+Equation~\eqref{eq:einstein} presupposes that spacetime exists
+everywhere — it contains no variable describing how much spacetime
+is present at a given point. SSC introduces exactly this missing
+variable, yielding the \emph{SSC field equation}:
+
+\begin{equation}
+  \boxed{\Phi\,G_{\mu\nu} = 8\pi T_{\mu\nu}.}
+  \label{eq:ssc_field}
+\end{equation}
+
+\textbf{[Candidate.]} Equation~\eqref{eq:ssc_field} is
+mathematically well-defined for all $\Phi > 0$. Whether it is the
+correct modification of GR is a question for future work; an
+action-principle derivation is required (Open Problem 8).
+
+\paragraph{Exact reduction to GR at $\Phi = 1$.}
+When $\Phi \equiv 1$, Equation~\eqref{eq:ssc_field} reduces
+identically to~\eqref{eq:einstein}. SSC is therefore a strict
+extension: every solution of GR is recovered in the $\Phi = 1$
+limit. \textbf{[Established.]}
+
+\paragraph{Singularity as phase transition.}
+For finite $T_{\mu\nu}$ and $\Phi \to 0$,
+Equation~\eqref{eq:ssc_field} formally implies $G_{\mu\nu} \to
+\infty$. The SSC interpretation is not that curvature diverges, but
+that \emph{the equation ceases to apply}: at $\Phi = 0$ no
+spacetime manifold exists and curvature is undefined. The
+singularity is therefore a phase transition out of the domain of
+validity of~\eqref{eq:ssc_field}, not a mathematical breakdown.
+\textbf{[Candidate — requires a formal phase-transition
+treatment.]}
+
+\paragraph{Modified energy-momentum conservation.}
+The contracted Bianchi identity gives $\nabla^\mu G_{\mu\nu} = 0$.
+Taking the covariant divergence of~\eqref{eq:ssc_field}:
+\begin{equation}
+  G_{\mu\nu}\,\partial^\mu\Phi
+  = 8\pi\,\nabla^\mu T_{\mu\nu}.
+  \label{eq:modified_conservation}
+\end{equation}
+Where $\Phi$ varies — in particular at the cosmic expansion front
+— energy-momentum is not locally conserved in the standard sense.
+The gradient $\partial^\mu\Phi$ acts as an exchange term between the
+spacetime and superstate sectors. The total energy across both
+sectors is assumed to be conserved; a precise formulation of this
+exchange is an open problem. \textbf{[Candidate.]}
+
+% ─────────────────────────────────────────────────────────────
+\subsection{\texorpdfstring{$\Phi$}{Phi}-Field Dynamics}
+
+The SSC field equation~\eqref{eq:ssc_field} couples $\Phi$ to
+the stress-energy tensor but does not determine how $\Phi$ evolves
+independently. An equation of motion for $\Phi$ is required.
+By analogy with Landau-Ginzburg theory for second-order phase
+transitions, the following candidate equation is proposed:
+
+\begin{equation}
+  \Box\Phi + V'(\Phi) = J(T),
+  \label{eq:phi_dynamics}
+\end{equation}
+where $\Box\Phi = \frac{1}{\sqrt{-g}}\partial_\mu
+(\sqrt{-g}\,g^{\mu\nu}\partial_\nu\Phi)$ is the covariant
+d'Alembertian, $V(\Phi)$ a potential energy density, and $J(T)$
+a source term with $T = T^\mu{}_\mu$ the trace of the
+stress-energy tensor.
+
+\textbf{[Candidate.]} The structural form of~\eqref{eq:phi_dynamics}
+is physically motivated; the specific forms of $V$ and $J$ below are
+chosen to satisfy the qualitative requirements of SSC and are not
+derived from first principles.
+
+\paragraph{Candidate potential.}
+\begin{equation}
+  V(\Phi) = \lambda\,\Phi^2(1-\Phi)^2,
+  \label{eq:potential}
+\end{equation}
+a symmetric double-well potential with minima at $\Phi = 0$
+(superstate) and $\Phi = 1$ (complete spacetime). Both phases are
+locally stable in the absence of matter.
+
+\paragraph{Candidate source term.}
+\begin{equation}
+  J(T) = \frac{\kappa\,T}{T + T_0},
+  \label{eq:source}
+\end{equation}
+where $T_0$ is a characteristic energy density (value
+undetermined) and $\kappa > 0$. For $T \gg T_0$: $J \to \kappa$,
+driving $\Phi$ toward 1 (spacetime forms in high-energy regions).
+For $T = 0$: $J = 0$ (vacuum — no preferred phase from this term).
+
+\begin{openbox}
+\textbf{Open Problem 8 — What determines $T_0$?}\\
+$T_0$ is the characteristic energy density at which the
+transition from superstate to spacetime is half-complete
+($\Phi = 0.5$). Its value governs the quantum-to-classical
+boundary. Candidate scales include the Planck density
+($\rho_{\rm Pl} \approx 5 \times 10^{96}~\text{kg/m}^3$) and
+cosmological energy scales. The derivation of $T_0$ from
+fundamental constants is the central open problem of the local
+$\Phi$-dynamics.
+\end{openbox}
+
+% ─────────────────────────────────────────────────────────────
+\subsection{The Cosmological Boundary}
+
+The cosmological particle horizon at time $t$ is:
+\begin{equation}
+  R(t) = \int_0^t \frac{c\,a(t')}{a(t)}\,\mathrm{d}t',
+\end{equation}
+where $a(t)$ is the scale factor. For $t = 13.8~\text{Gyr}$,
+$R \approx 46.5~\text{Gly}$ (the present observable universe
+radius). In SSC, $R(t)$ marks the boundary between the spacetime
+phase and the superstate, encoded as a boundary condition on $\Phi$:
+
+\begin{equation}
+  \Phi(r,t) \;\to\; \begin{cases} 1 & r \ll R(t),\\ 0 & r \gg R(t),
+  \end{cases}
+  \label{eq:boundary}
+\end{equation}
+with a smooth transition profile near $r = R(t)$ governed by the
+dynamics in~\eqref{eq:phi_dynamics}. \textbf{[Established]} as a
+boundary condition; the profile of the transition zone is
+\textbf{[Candidate]}.
+
+The rate of change of the boundary is $\dot{R}(t) = c/a(t)$ in
+comoving coordinates, reproducing the observed recession velocity
+of the cosmic horizon without additional assumptions. In SSC,
+$\dot{R}(t)$ is simultaneously the expansion rate of the universe
+and the propagation speed of the spacetime wavefront — one quantity,
+not two. \textbf{[Established.]}
+
+% ─────────────────────────────────────────────────────────────
+\subsection{The Quantum Limit: \texorpdfstring{$0 < \Phi < 1$}{0 < Phi < 1}}
+
+\textbf{[Open.]} The SSC principle requires that quantum mechanics
+emerges in the regime $0 < \Phi < 1$. A natural starting point
+is to apply the $\Phi$-modification to the Klein-Gordon equation
+for a matter field $\psi$:
+\begin{equation}
+  \Phi\,g^{\mu\nu}\nabla_\mu\nabla_\nu\psi + m^2\psi = 0.
+  \label{eq:phi_kg}
+\end{equation}
+In the non-relativistic limit ($v \ll c$) with $\Phi = 1 - \varepsilon$
+and $\varepsilon \ll 1$, Equation~\eqref{eq:phi_kg} reduces to the
+Schrödinger equation plus corrections of order $\varepsilon = 1 -
+\Phi$. The conjecture is that the full quantum formalism — including
+the Born rule, the uncertainty principle, and unitary evolution —
+emerges systematically from~\eqref{eq:phi_kg} as $\Phi$ decreases
+from 1.
+
+A formal derivation of this limit has not yet been carried out. It
+is explicitly stated as Open Problem 9 below.
+
+% ─────────────────────────────────────────────────────────────
+\subsection{Mathematical Status Summary}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabular}{p{5.2cm} l p{5.5cm}}
+\toprule
+\textbf{Claim} & \textbf{Status} & \textbf{What remains}\\
+\midrule
+Extended field eq.\ $\Phi G_{\mu\nu} = 8\pi T_{\mu\nu}$
+  & Candidate & Action-principle derivation\\
+Reduction to GR at $\Phi = 1$
+  & Established & Nothing — exact\\
+Complementarity $\Phi + \Psi = 1$
+  & Established & Nothing — by definition\\
+Two dimensions of $\Phi$ (existence vs.\ completeness)
+  & Established & Formal operator representation\\
+Singularity as $\Phi \to 0$ phase transition
+  & Candidate & Full phase-transition dynamics\\
+Cosmological boundary condition \eqref{eq:boundary}
+  & Established & Transition-zone profile\\
+$\Phi$-dynamics eq.\ \eqref{eq:phi_dynamics} (form of $V$, $J$)
+  & Candidate & Derivation from first principles\\
+Value of $T_0$ (characteristic density)
+  & Open & Derivation from constants\\
+Quantum limit: Schrödinger eq.\ from $\Phi < 1$
+  & Open & Full formal derivation\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+% ============================================================
 \section{Open Questions and Required Mathematical Work}
 \label{sec:open}
 % ============================================================
@@ -745,7 +1006,52 @@ open problem of the framework.
 \end{openbox}
 
 \begin{openbox}
-\textbf{Open Problem 7 — Can the alternative (multi-bubble) approach be formalized?}\\
+\textbf{Open Problem 8 — Action-principle derivation of the SSC field equation.}\\
+The modified field equation $\Phi G_{\mu\nu} = 8\pi T_{\mu\nu}$
+(Section~\ref{sec:math}) is proposed as a candidate but has not been
+derived from a variational principle. A Lagrangian density coupling
+$\Phi$ to the Einstein-Hilbert action must be formulated. The form of
+this Lagrangian would also determine the precise dynamics of $\Phi$,
+fixing the candidate equations~\eqref{eq:phi_dynamics}--\eqref{eq:source}
+or replacing them.
+\end{openbox}
+
+\begin{openbox}
+\textbf{Open Problem 9 — Formal derivation of the quantum limit.}\\
+SSC requires that the Schrödinger equation (and its relativistic
+generalisations) emerge formally as a limit of the $\Phi$-modified
+field equations in the regime $0 < \Phi < 1$. A first candidate is
+the modified Klein-Gordon equation~\eqref{eq:phi_kg}. A rigorous
+derivation must show that the Born rule, the uncertainty principle,
+and unitary evolution all follow from the $\Phi$-dynamics without
+additional postulates. This is the central formal challenge of the
+programme.
+\end{openbox}
+
+\begin{openbox}
+\textbf{Open Problem 10 — Why does Raumzeit fully suppress superposition at macroscopic scales but not at quantum scales?}\\
+SSC explains qualitatively that larger mass implies more complete
+spacetime ($\Phi \to 1$) and therefore stronger suppression of
+superposition (decoherence). But it does not yet specify the
+quantitative threshold — i.e., the characteristic scale (mass, length,
+or energy) below which $\Phi$ deviates measurably from 1. Identifying
+this scale and connecting it to observed decoherence rates would
+constitute the first direct observational test of the $\Phi$-field.
+\end{openbox}
+
+\begin{openbox}
+\textbf{Open Problem 11 — Can QM and GR be formally unified via $\Phi$-dynamics?}\\
+SSC proposes that General Relativity describes the $\Phi = 1$ limit and
+quantum mechanics describes the $0 < \Phi < 1$ regime of the same
+underlying framework. A formal unification requires showing that
+Einstein's field equations and the Schrödinger equation are
+simultaneously derivable as limiting cases of a single $\Phi$-dependent
+master equation. This is the deepest mathematical goal of the
+programme.
+\end{openbox}
+
+\begin{openbox}
+\textbf{Open Problem 12 — Can the alternative (multi-bubble) approach be formalized?}\\
 The speculative alternative version of SSC (Section~\ref{sec:cyclic},
 Phase~2) posits that multiple spacetime bubbles originate independently
 in the superstate and dock at inter-dimensional boundaries.  If this
@@ -756,6 +1062,11 @@ account of the observable consequences of a multi-bubble structure,
 including potential signatures of inter-bubble boundaries in the
 cosmic microwave background or large-scale structure.
 \end{openbox}
+
+\medskip
+\noindent\textit{Open Problems~1--7 were identified during the initial
+conceptual development.  Problems~8--12 emerged from the first
+mathematical formalization session (Section~\ref{sec:math}).}
 
 % ============================================================
 \section{Discussion}
@@ -773,9 +1084,21 @@ the origin of the universe — under a single organizing principle.  The
 internal consistency of the implications suggests the underlying
 conceptual structure is productive.
 
-The limitation is the absence of mathematical formalization.  Without
-quantitative predictions, SSC cannot be directly compared to formal
-theories or tested against observations.  The open problems in
+Section~\ref{sec:math} presents a first step toward mathematical
+formalization.  The central proposal is the modified field equation
+$\Phi G_{\mu\nu} = 8\pi T_{\mu\nu}$, which extends Einstein's equations
+by a single scalar factor encoding how much spacetime is present at a
+given point.  At $\Phi = 1$ this reduces exactly to GR; for
+$0 < \Phi < 1$ it admits quantum corrections; at $\Phi = 0$ the
+spacetime manifold ceases to exist.  The complementarity condition
+$\Phi + \Psi = 1$ is mathematically established.  The dynamics equation
+for $\Phi$ and the quantum limit are explicitly marked as candidates
+and open problems respectively.
+
+The limitation of this formalization is its incompleteness.  Without
+an action-principle derivation and without a formal proof that the
+Schrödinger equation emerges as a limiting case, SSC cannot yet generate
+quantitative predictions.  The open problems in
 Section~\ref{sec:open} are not peripheral details; they are the core
 of the research programme required to transform SSC from a conceptual
 framework into a physical theory.
