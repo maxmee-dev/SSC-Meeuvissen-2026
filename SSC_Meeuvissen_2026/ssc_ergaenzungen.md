@@ -1,5 +1,5 @@
 # SSC — Theorie & Entstehungsdokument
-### Max Meeuvissen · Beginn: 4. Mai 2026 · laufend weitergeschrieben
+### Max Meeuvissen · Beginn: 4. Mai 2026 · laufend weitergeschrieben · Version 0.9.0
 
 ---
 
@@ -71,10 +71,13 @@ Noch am selben Tag wurde ein formales wissenschaftliches Preprint in LaTeX erste
 **Theorie vollständig erstentwickelt** (siehe Abschnitt 1).  
 Alle Kerninhalte in einem Gespräch entstanden. Preprint und Erklärversionen erstellt.
 
+*→ CHANGELOG: v0.1.0 · `cefabf7`*
+
 ---
 
 ### Eintrag 002 — 4. Mai 2026
 **Erste Korrektur: Urknall-Formulierung**
+*→ CHANGELOG: v0.1.0 · `cefabf7`*
 
 Die ursprüngliche Formulierung lautete:
 
@@ -89,6 +92,7 @@ Die ursprüngliche Formulierung lautete:
 
 ### Eintrag 003 — 4. Mai 2026
 **Ergänzung: Zwei Ansätze zur Entstehung von Raumzeit**
+*→ CHANGELOG: v0.1.0 · `cefabf7`*
 
 Zur Urknall-Frage wurden zwei Ansätze explizit formuliert:
 
@@ -103,6 +107,7 @@ Mehrere Raumzeit-Blasen entstehen unabhängig im Superzustand und docken aneinan
 
 ### Eintrag 004 — 4. Mai 2026
 **Ergänzung: Quantensuperposition, Decoherence und graduelle Raumzeit**
+*→ CHANGELOG: v0.1.0 · `cefabf7`*
 
 Neue Erkenntnis: Raumzeit ist kein An/Aus-Schalter, sondern ein gradueller Übergang. Das erklärt strukturell, warum Superposition auf Quantenebene erhalten bleibt — weil Raumzeit dort noch nicht vollständig ausgebildet ist. Und es erklärt, warum Decoherence mit zunehmender Masse stärker wird: Je massereicher ein Objekt, desto vollständiger greift Raumzeit.
 
@@ -114,6 +119,7 @@ Zwei neue offene Fragen hinzugefügt (10 und 11).
 
 ### Eintrag 005 — 4. Mai 2026
 **Ergänzung: Erklärungskraft der Theorie als Plausibilitätsargument**
+*→ CHANGELOG: v0.1.0 · `cefabf7`*
 
 Explizit ausgearbeitet: Die Theorie adressiert mit einem einzigen Mechanismus neun bisher ungelöste Probleme der Physik — ohne dass sie für eines davon entwickelt wurde. Das ist nach dem Prinzip der erklärenden Kohärenz ein starkes Plausibilitätsargument, auch ohne formale Mathematik. Methodische Anmerkung für zukünftige Paper-Versionen hinzugefügt.
 
@@ -123,6 +129,7 @@ Explizit ausgearbeitet: Die Theorie adressiert mit einem einzigen Mechanismus ne
 
 ### Eintrag 006 — 4. Mai 2026
 **Ergänzung: Die 9 adressierten Probleme — Herkunft und ausführliche Antworten**
+*→ CHANGELOG: v0.1.0 · `cefabf7`*
 
 Auf Nachfrage explizit dokumentiert: Die 9 ungelösten Probleme der Physik, die SSC adressiert, wurden nicht nachträglich gesucht — sie ergaben sich beim Durchdenken der Theorie als Nebenprodukt. Die Nummerierung und Benennung stammt von Max Meeuvissen.
 
@@ -158,6 +165,7 @@ Vollständige Einzelausarbeitungen in Abschnitt 3.12.
 
 ### Eintrag 007 — 4. Mai 2026
 **Vertiefung: Warum wird die Position eines Teilchens durch Messung fix?**
+*→ CHANGELOG: v0.2.0 · `6cc182a`*
 
 Frage von Max: Wenn Raumzeit der Kollaps-Mechanismus ist — warum fixiert dann ausgerechnet die *Messung* die Position?
 
@@ -173,6 +181,7 @@ Ergänzt in Abschnitt 3.9.
 
 ### Eintrag 008 — 4. Mai 2026
 **Präzisierung: Zwei Dimensionen von Φ — und klare Unterscheidung Superzustand vs. Quantensuperposition**
+*→ CHANGELOG: v0.4.0 · `0817228`*
 
 Aus der mathematischen Formalisierungssitzung heraus entstanden zwei wichtige Präzisierungen.
 
@@ -192,6 +201,7 @@ Ergänzt in Abschnitt 3.9.
 
 ### Eintrag 009 — 4. Mai 2026
 **Ergänzung: Superposition als universelles Phänomen — nicht Ausnahme, sondern Grundstruktur**
+*→ CHANGELOG: v0.4.0 · `0817228`*
 
 Quantensuperposition ist kein Laborphänomen. Alles was existiert besteht aus Atomen, und in jedem Atom existiert Superposition auf Ebene der Elektronen und Quarks. Der Überrest des Superzustands ist nicht eine Ausnahme — er ist die Grundstruktur der gesamten Materie.
 
@@ -203,6 +213,7 @@ Ergänzt in Abschnitt 3.9.
 
 ### Eintrag 010 — 4. Mai 2026
 **Zwei Modelle für die Beziehung zwischen Superzustand und Superposition**
+*→ CHANGELOG: v0.4.0 · `0817228`*
 
 Zwei konkurrierende Modelle wurden explizit formuliert und bewertet:
 
@@ -217,6 +228,7 @@ Ergänzt in Abschnitt 3.9.
 
 ### Eintrag 011 — 4. Mai 2026
 **Vereinigung von QM und Relativitätstheorie als zehntes gelöstes Problem**
+*→ CHANGELOG: v0.4.0 · `0817228`*
 
 Das zentrale ungelöste Problem der theoretischen Physik — die Vereinigung von Quantenmechanik und Allgemeiner Relativitätstheorie — wird von SSC konzeptuell adressiert:
 
@@ -274,6 +286,8 @@ Die Wellenfront propagiert durch das Doppeltopf-Potential V(Φ) = λΦ²(1−Φ)
 
 Ergänzt in Abschnitt 3.1 und ssc_mathematik.md (Sitzung 3).
 
+*→ CHANGELOG: v0.7.0 · `f87758d` (Dateiänderungen) | v0.8.0 · `efae375` (Übertragung in ssc_paper.tex + ssc_gesamt.html)*
+
 ---
 
 ### Eintrag 013 — 4. Mai 2026
@@ -309,7 +323,9 @@ Das ist *nicht* w = −1. Für w = −1 müsste die Energiedichte der Grenzfläc
 **Was könnte w = −1 erklären:**
 Wenn der bidirektionale Mechanismus eine effektive Vakuumenergie erzeugt — also eine konstante Energiedichte im gesamten Raumzeit-Volumen — dann folgt w = −1 (das ist formal äquivalent zur kosmologischen Konstante Λ). Das müsste dann hergeleitet werden: warum erzeugt der Mechanismus eine konstante Dichte statt eine flächenproportionale?
 
-**Offene Fragen aus diesem Ansatz:** → Fragen 15, 16, 17 (siehe 3.11)
+**Offene Fragen aus diesem Ansatz:** → Fragen 13, 14, 15 (siehe 3.11)
+
+*→ CHANGELOG: v0.7.0 · `f87758d` (Dateiänderungen) | v0.8.0 · `efae375` (Übertragung in ssc_paper.tex + ssc_gesamt.html)*
 
 ---
 

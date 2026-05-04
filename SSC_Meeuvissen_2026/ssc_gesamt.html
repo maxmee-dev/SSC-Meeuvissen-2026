@@ -203,7 +203,22 @@
   }
 
   /* ── Druck ── */
-  @page { size: A4; margin: 2cm 2.5cm 2.5cm 2.5cm; }
+  @page {
+    size: A4;
+    margin: 2cm 2.5cm 2.8cm 2.5cm;
+    @bottom-left {
+      content: "SSC v0.9.0 · Max Meeuvissen · 4. Mai 2026";
+      font-family: Arial, sans-serif;
+      font-size: 7.5pt;
+      color: #aaa;
+    }
+    @bottom-right {
+      content: "Seite " counter(page) " / " counter(pages);
+      font-family: Arial, sans-serif;
+      font-size: 7.5pt;
+      color: #aaa;
+    }
+  }
   @media print {
     body { padding: 0; }
     .kernthese { background: #f0f0f0 !important; }
@@ -227,7 +242,8 @@
   <div class="meta">
     Max Meeuvissen · Unabhängig entwickelt, 4. Mai 2026<br>
     Erstes Dokument ohne Vorkenntnisse der Fachliteratur, in einem Gespräch<br>
-    maxmee18@gmail.com · github.com/maxmee-dev/SSC-Meeuvissen-2026
+    maxmee18@gmail.com · github.com/maxmee-dev/SSC-Meeuvissen-2026<br>
+    <strong>Version 0.9.0</strong> · Stand: 4. Mai 2026
   </div>
 </div>
 
@@ -791,7 +807,7 @@ Wie verhält sich der Energieaustausch an der Raumzeit-Superzustand-Grenzfläche
 </p>
 
 <div class="footer">
-  Raumzeit-Superpositions-Komplementarität (SSC) · Max Meeuvissen · 4. Mai 2026 ·
+  Raumzeit-Superpositions-Komplementarität (SSC) · Version 0.9.0 · Max Meeuvissen · 4. Mai 2026 ·
   Unabhängig entwickelt ohne Vorkenntnisse der Fachliteratur ·
   Repository: github.com/maxmee-dev/SSC-Meeuvissen-2026 · maxmee18@gmail.com
 </div>

@@ -1,6 +1,6 @@
 # Spacetime-Superposition Complementarity (SSC)
 
-**Theory by Max Meeuvissen — First record: May 4, 2026**
+**Theory by Max Meeuvissen — First record: May 4, 2026 — Current version: v0.9.0**
 
 This repository documents the **Spacetime-Superposition Complementarity (SSC)** framework, developed independently by Max Meeuvissen in May 2026 in a single conversation without prior knowledge of the relevant literature.
 
